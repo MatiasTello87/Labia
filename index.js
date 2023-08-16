@@ -8,6 +8,7 @@ const port = process.env.PORT
 
 // Servir archivos estáticos
 app.use(express.static('public'))
+
 // Configurar rutas
 app.get('/', (req, res) => {
   res.send('Hello World!')
