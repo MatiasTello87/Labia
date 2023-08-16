@@ -1,3 +1,24 @@
 body{
-    background-color: rgb(196, 121, 51);
+    width: 80%;
+    margin: 0 auto;
+    // border-left: 1px solid rgb(116, 116, 116);
+    // border-right: 1px solid rgba(245, 245, 245, 0.204);
+    background-image: linear-gradient(to right , #181818 , #0e0e0e);
+    color: whitesmoke;
+    .header{
+        width: 50%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2em;
+        transform: translate(-150px, 50px);
+    }
+    .description{
+        width: 50%;
+        font-size: 1.5em;
+        font-weight: 600;
+        transform: translate(100px, 30px);
+        color: rgb(176, 176, 176);
+    }
 }
