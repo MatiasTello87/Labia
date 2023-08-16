@@ -17,8 +17,18 @@ body{
     .description{
         width: 50%;
         font-size: 1.5em;
-        font-weight: 600;
-        transform: translate(100px, 30px);
+        transform: translate(170px, 30px);
         color: rgb(176, 176, 176);
+        margin-bottom: 3em;
+    }
+    section{
+        margin: 2em 0;
+        article{
+            width: 600px;
+            padding: 1em;
+            border: .5px inset rgb(78, 122, 142);
+            border-radius: 15px;
+            box-shadow: 5px 5px 15px rgba(78, 122, 142, 0.131);
+        }
     }
 }
