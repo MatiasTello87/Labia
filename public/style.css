@@ -1,34 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400&display=swap");
 body {
   width: 80%;
   margin: 0 auto;
   background-image: linear-gradient(to right, #181818, #0e0e0e);
-  color: whitesmoke;
+  font-family: "Lato";
 }
-body .header {
+body header {
+  height: 90px;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em;
+  border-bottom: 1px solid black;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  backdrop-filter: blur(4px);
+  margin-bottom: 5em;
+}
+body header .icon_logo {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 1px solid black;
+}
+body .imgs_logo_hamburguer {
   width: 50%;
   margin: 0 auto;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 2em;
-  transform: translate(-150px, 50px);
+  transform: translate(-250px, 0);
 }
 body .description {
   width: 50%;
   font-size: 1.5em;
-  transform: translate(170px, 30px);
   color: rgb(176, 176, 176);
-  margin-bottom: 3em;
+  margin: 3em 0;
+  margin-left: 435px;
 }
 body section {
-  margin: 2em 0;
+  margin: 10em 0;
 }
 body section article {
-  width: 600px;
-  padding: 1em;
-  border: 0.5px inset rgb(78, 122, 142);
+  width: 500px;
+  padding: 2em;
+  border: 0.5px inset #5F7995;
   border-radius: 15px;
-  box-shadow: 5px 5px 15px rgba(78, 122, 142, 0.131);
+  box-shadow: 5px 5px 15px rgba(78, 122, 142, 0.072);
+  color: #c4c4c4;
+}
+body section article h2 {
+  font-size: 2em;
+  color: #5F7995;
+}
+body section article p {
+  font-size: 1.2em;
 }
 
 /*# sourceMappingURL=style.css.map */
