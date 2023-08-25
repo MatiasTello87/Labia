@@ -32,6 +32,9 @@ body header .icon_logo {
   border: 1px inset black;
   cursor: pointer;
 }
+body header .hamburguer {
+  opacity: 0.7;
+}
 body .inicio {
   display: flex;
   justify-content: space-between;
