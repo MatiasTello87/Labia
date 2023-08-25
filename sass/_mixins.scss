@@ -1,0 +1,22 @@
+// Bordes
+
+@mixin border(){
+    border: 1px inset black;
+}
+
+@mixin corner_bottom(){
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+@mixin corner_right(){
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+@mixin corner_top(){
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+@mixin corner_left(){
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}

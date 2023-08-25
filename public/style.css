@@ -2,11 +2,14 @@
 body {
   width: 80%;
   margin: 0 auto;
-  background-image: linear-gradient(to right, #181818, #0e0e0e);
+  background-image: linear-gradient(to right, #181818, #0a0a0a);
   font-family: "Lato";
+  font-weight: 500;
+  color: #c4c4c4;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.176);
 }
 body header {
-  height: 90px;
+  height: 50px;
   position: sticky;
   top: 0;
   z-index: 10;
@@ -14,9 +17,10 @@ body header {
   justify-content: space-between;
   align-items: center;
   padding: 1em;
-  border-bottom: 1px solid black;
+  border-bottom: 1px inset black;
   border-bottom-left-radius: 15px;
   border-bottom-right-radius: 15px;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.176);
   backdrop-filter: blur(4px);
   margin-bottom: 5em;
 }
@@ -24,34 +28,45 @@ body header .icon_logo {
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  border: 1px solid black;
+  border: 1px inset black;
+  cursor: pointer;
 }
-body .imgs_logo_hamburguer {
-  width: 50%;
-  margin: 0 auto;
+body .inicio {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   gap: 2em;
-  transform: translate(-250px, 0);
+  padding: 5em;
+  border-bottom: 1px inset black;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.176);
 }
-body .description {
+body .inicio .description {
   width: 50%;
-  font-size: 1.5em;
-  color: rgb(176, 176, 176);
-  margin: 3em 0;
-  margin-left: 435px;
+  font-size: 1.3em;
 }
 body section {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
   margin: 10em 0;
+  padding: 5em 0;
+  border-bottom: 1px inset black;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.176);
+  line-height: 1.3em;
 }
 body section article {
   width: 500px;
   padding: 2em;
-  border: 0.5px inset #5F7995;
-  border-radius: 15px;
-  box-shadow: 5px 5px 15px rgba(78, 122, 142, 0.072);
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.176);
   color: #c4c4c4;
+  border: 1px inset black;
+  z-index: 1;
 }
 body section article h2 {
   font-size: 2em;
@@ -59,6 +74,64 @@ body section article h2 {
 }
 body section article p {
   font-size: 1.2em;
+}
+body section article a {
+  text-decoration: none;
+  color: #5F7995;
+}
+body section article a:hover {
+  font-size: 1.2em;
+}
+body section .genero {
+  padding: 0.5em 1em;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  border: 1px inset black;
+  transform: translate(-40px, 50px);
+  background-color: rgba(221, 114, 48, 0.3215686275);
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.176);
+}
+body section .autor__articulo {
+  width: 300px;
+  padding: 1em;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.176);
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  border: 1px inset black;
+  text-align: end;
+}
+body section .autor__articulo img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+body footer {
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em;
+  color: #DD7230;
+  border: 1px inset black;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.176);
+}
+body footer img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+body footer .contacto {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1em;
+}
+body footer .contacto a img {
+  width: 30px;
+  height: 30px;
+  opacity: 0.5;
 }
 
 /*# sourceMappingURL=style.css.map */

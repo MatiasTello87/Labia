@@ -1,0 +1,29 @@
+@mixin footer(){
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+    color: $orange;
+    @include border();
+    @include corner_top();
+    box-shadow: $shadow;
+    img{
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+    }
+    .contacto{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 1em;
+        a{
+            img{
+                width: 30px;
+                height: 30px;
+                opacity: .5;
+            }
+        }
+    }
+}

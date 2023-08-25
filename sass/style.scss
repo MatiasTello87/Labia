@@ -2,58 +2,56 @@
 @import 'colors';
 // fonts
 @import 'fonts';
+// bordes
+@import 'mixins';
+// header
+@import 'header';
+// footer
+@import 'footer';
 
 body{
     width: 80%;
     margin: 0 auto;
-    background-image: linear-gradient(to right , #181818 , #0e0e0e);
+    background-image: linear-gradient(to right , #181818 , #0a0a0a);
     font-family: 'Lato';
+    font-weight: 500;
+    color: $gray;
+    box-shadow: $shadow;
     header{
-        height: 90px;
-        position: sticky;
-        top: 0;
-        z-index: 10;
+        @include header();
+    }
+    .inicio{
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 1em;
-        border-bottom: 1px solid black;
-        border-bottom-left-radius: 15px;
-        border-bottom-right-radius: 15px;
-        backdrop-filter: blur(4px);
-        margin-bottom: 5em;
-        .icon_logo{
-            width: 50px;
-            height: 50px;
-            border-radius: 50%;
-            border: 1px solid black;
+        gap: 2em;
+        padding: 5em;
+        border-bottom: 1px inset black;
+        @include corner_bottom();
+        box-shadow: $shadow;
+        .description{
+            width: 50%;
+            font-size: 1.3em;
         }
     }
-    .imgs_logo_hamburguer{
-        width: 50%;
-        margin: 0 auto;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 2em;
-        transform: translate(-250px, 0);
-    }
-    .description{
-        width: 50%;
-        font-size: 1.5em;
-        color: rgb(176, 176, 176);
-        margin: 3em 0;
-        margin-left: 435px;
-    }
     section{
+        display: flex;
+        justify-content: space-between;
+        align-items: start;
         margin: 10em 0;
+        padding: 5em 0;
+        border-bottom: 1px inset black;
+        @include corner_bottom();
+        box-shadow: $shadow;
+        line-height: 1.3em;
         article{
             width: 500px;
             padding: 2em;
-            border: .5px inset $blue;
-            border-radius: 15px;
-            box-shadow: 5px 5px 15px rgba(78, 122, 142, 0.072);
+            @include corner_right();
+            box-shadow: $shadow;
             color: $gray;
+            @include border();
+            z-index: 1;
             h2{
                 font-size: 2em;
                 color: $blue;
@@ -61,6 +59,37 @@ body{
             p{
                 font-size: 1.2em;
             }
+            a{
+                text-decoration: none;
+                color: $blue;
+                &:hover{
+                    font-size: 1.2em;
+                }
+            }
         }
+        .genero{
+            padding: .5em 1em;
+            @include corner_right();
+            @include border();
+            transform: translate(-40px, 50px);
+            background-color: $orange_dark;
+            box-shadow: $shadow;
+        }
+        .autor__articulo{
+            width: 300px;
+            padding: 1em;
+            box-shadow: $shadow;
+            @include corner_left();
+            @include border();
+            text-align: end;
+            img{
+                width: 80px;
+                height: 80px;
+                border-radius: 50%;
+            }
+        }
+    }
+    footer{
+        @include footer();
     }
 }
