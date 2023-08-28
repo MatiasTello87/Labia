@@ -20,7 +20,63 @@
             cursor: pointer;
         }
         .hamburguer{
+            width: 95%;
+            // height: 30px;
             opacity: .7;
+            cursor: pointer;
+            &:hover{
+                transform: translateY(-1px);
+            }
         }
+        nav{
+            opacity: 0;
+            visibility: hidden;
+            position: absolute;
+            top: 0;
+            right: 0;
 
+            width: 150px;
+            height: 250px;
+            padding: 1em;
+            display: flex;
+            flex-direction: column;
+            list-style-type: none;
+            gap: 1em;
+            justify-content: space-between;
+            align-items: end;
+            transform: translateY(-1px);
+            @include corner_bottom();
+            @include border ();
+            background-color: rgb(11, 11, 11);
+            box-shadow: 0 0 0 100vmax rgba(0,0,0,.7);
+            transition: all 1s ease-in-out;    
+            li{
+                list-style-type: none;
+                &:hover{
+                    transform: translate(-2px, -3px);
+                }
+                a{
+                    color: rgba(255, 255, 255, 0.609);
+                    font-size: 1.3em;
+                    text-decoration: none;
+                    &:hover{
+                        color: rgba(255, 255, 255, 0.858);
+                    }
+                }
+                button{
+                    background-color: transparent;
+                    color: white;
+                    border-radius: 50%;
+                    @include border();
+                    box-shadow: $shadow;
+                    font-weight: 600;
+                    cursor: pointer;
+                    
+                }
+            }
+        }
+        .visible{
+            opacity: 1;
+            visibility: visible;
+        }
 }

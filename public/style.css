@@ -32,7 +32,62 @@ body header .icon_logo {
   cursor: pointer;
 }
 body header .hamburguer {
+  width: 95%;
   opacity: 0.7;
+  cursor: pointer;
+}
+body header .hamburguer:hover {
+  transform: translateY(-1px);
+}
+body header nav {
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 150px;
+  height: 250px;
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  gap: 1em;
+  justify-content: space-between;
+  align-items: end;
+  transform: translateY(-1px);
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  border: 1px inset black;
+  background-color: rgb(11, 11, 11);
+  box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.7);
+  transition: all 1s ease-in-out;
+}
+body header nav li {
+  list-style-type: none;
+}
+body header nav li:hover {
+  transform: translate(-2px, -3px);
+}
+body header nav li a {
+  color: rgba(255, 255, 255, 0.609);
+  font-size: 1.3em;
+  text-decoration: none;
+}
+body header nav li a:hover {
+  color: rgba(255, 255, 255, 0.858);
+}
+body header nav li button {
+  background-color: transparent;
+  color: white;
+  border-radius: 50%;
+  border: 1px inset black;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.176);
+  font-weight: 600;
+  cursor: pointer;
+}
+body header .visible {
+  opacity: 1;
+  visibility: visible;
 }
 body .inicio {
   display: flex;
