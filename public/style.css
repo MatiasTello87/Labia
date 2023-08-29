@@ -247,6 +247,11 @@ body footer .contacto a img {
   body section div article {
     width: 350px;
   }
+  body section div .genero {
+    transform: translate(-100px, -40px);
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

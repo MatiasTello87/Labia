@@ -91,7 +91,6 @@ body{
                 background-color: $orange_dark;
                 box-shadow: $shadow;
             }
-
         }
         .autor__articulo{
             width: 300px;
@@ -158,6 +157,10 @@ body{
             div{
                 article{
                     width: 350px;
+                }
+                .genero{
+                    transform: translate(-100px, -40px);
+                    @include corner_top();
                 }
             }
         }
