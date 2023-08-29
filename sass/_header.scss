@@ -36,7 +36,7 @@
             right: 0;
 
             width: 150px;
-            height: 250px;
+            height: 300px;
             padding: 1em;
             display: flex;
             flex-direction: column;
@@ -56,19 +56,20 @@
                     transform: translate(-2px, -3px);
                 }
                 a{
-                    color: rgba(255, 255, 255, 0.609);
+                    color: $orange;
                     font-size: 1.3em;
                     text-decoration: none;
                     &:hover{
-                        color: rgba(255, 255, 255, 0.858);
+                        color: $orange;
                     }
                 }
                 button{
                     background-color: transparent;
-                    color: white;
+                    color: $orange;
                     border-radius: 50%;
                     @include border();
                     box-shadow: $shadow;
+                    font-size: 1.2em;
                     font-weight: 600;
                     cursor: pointer;
                     

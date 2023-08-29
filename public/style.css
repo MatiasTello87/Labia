@@ -1,4 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   width: 80%;
   margin: 0 auto;
@@ -7,6 +13,7 @@ body {
   font-weight: 500;
   color: #c4c4c4;
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.176);
+  overflow-x: hidden;
 }
 body header {
   height: 50px;
@@ -46,7 +53,7 @@ body header nav {
   top: 0;
   right: 0;
   width: 150px;
-  height: 250px;
+  height: 300px;
   padding: 1em;
   display: flex;
   flex-direction: column;
@@ -69,19 +76,20 @@ body header nav li:hover {
   transform: translate(-2px, -3px);
 }
 body header nav li a {
-  color: rgba(255, 255, 255, 0.609);
+  color: #DD7230;
   font-size: 1.3em;
   text-decoration: none;
 }
 body header nav li a:hover {
-  color: rgba(255, 255, 255, 0.858);
+  color: #DD7230;
 }
 body header nav li button {
   background-color: transparent;
-  color: white;
+  color: #DD7230;
   border-radius: 50%;
   border: 1px inset black;
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.176);
+  font-size: 1.2em;
   font-weight: 600;
   cursor: pointer;
 }
@@ -114,39 +122,46 @@ body section {
   border-bottom-left-radius: 15px;
   border-bottom-right-radius: 15px;
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.176);
-  line-height: 1.3em;
+  line-height: 1.4em;
 }
-body section article {
+body section div {
+  display: flex;
+}
+body section div article {
+  display: flex;
+  flex-direction: column;
   width: 500px;
   padding: 2em;
+  color: #c4c4c4;
+  gap: 1em;
+  z-index: 1;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.176);
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
-  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.176);
-  color: #c4c4c4;
   border: 1px inset black;
-  z-index: 1;
 }
-body section article h2 {
+body section div article h2 {
   font-size: 2em;
   color: #5F7995;
 }
-body section article p {
+body section div article p {
   font-size: 1.2em;
 }
-body section article a {
+body section div article a {
   text-decoration: none;
   color: #5F7995;
 }
-body section article a:hover {
+body section div article a:hover {
   font-size: 1.2em;
 }
-body section .genero {
+body section div .genero {
+  height: 50px;
   padding: 0.5em 1em;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
   border: 1px inset black;
-  transform: translate(-40px, 50px);
-  background-color: rgba(221, 114, 48, 0.3215686275);
+  transform: translate(0px, 50px);
+  background-color: rgba(221, 114, 48, 0.5882352941);
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.176);
 }
 body section .autor__articulo {
@@ -190,6 +205,48 @@ body footer .contacto a img {
   width: 30px;
   height: 30px;
   opacity: 0.5;
+}
+
+@media screen and (max-width: 1200px) {
+  body {
+    width: 90%;
+  }
+  body .inicio {
+    flex-direction: column;
+    padding: 2em;
+    gap: 8em;
+  }
+  body .inicio .description {
+    width: 80%;
+  }
+  body section {
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 3em;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 768px) {
+  body {
+    width: 95%;
+  }
+  body section div article {
+    width: 400px;
+  }
+  body section div article h2 {
+    line-height: 1em;
+  }
+  body section div article p {
+    font-size: 1em;
+  }
+  body section div .genero {
+    padding: 0.5em 0.3em;
+  }
+}
+@media screen and (max-width: 576px) {
+  body section div article {
+    width: 350px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

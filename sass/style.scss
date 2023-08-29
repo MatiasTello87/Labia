@@ -8,6 +8,15 @@
 @import 'header';
 // footer
 @import 'footer';
+// // mediaqueries
+// @import 'mediaqueries';
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 body{
     width: 80%;
@@ -17,6 +26,7 @@ body{
     font-weight: 500;
     color: $gray;
     box-shadow: $shadow;
+    overflow-x: hidden;
     header{
         @include header();
     }
@@ -43,37 +53,45 @@ body{
         border-bottom: 1px inset black;
         @include corner_bottom();
         box-shadow: $shadow;
-        line-height: 1.3em;
-        article{
-            width: 500px;
-            padding: 2em;
-            @include corner_right();
-            box-shadow: $shadow;
-            color: $gray;
-            @include border();
-            z-index: 1;
-            h2{
-                font-size: 2em;
-                color: $blue;
-            }
-            p{
-                font-size: 1.2em;
-            }
-            a{
-                text-decoration: none;
-                color: $blue;
-                &:hover{
+        line-height: 1.4em;
+        div{
+            display: flex;
+            article{
+                display: flex;
+                flex-direction: column;
+                width: 500px;
+                padding: 2em;
+                color: $gray;
+                gap: 1em;
+                z-index: 1;
+                box-shadow: $shadow;
+                @include corner_right();
+                @include border();
+                h2{
+                    font-size: 2em;
+                    color: $blue;
+                }
+                p{
                     font-size: 1.2em;
                 }
+                a{
+                    text-decoration: none;
+                    color: $blue;
+                    &:hover{
+                        font-size: 1.2em;
+                    }
+                }
             }
-        }
-        .genero{
-            padding: .5em 1em;
-            @include corner_right();
-            @include border();
-            transform: translate(-40px, 50px);
-            background-color: $orange_dark;
-            box-shadow: $shadow;
+            .genero{
+                height: 50px;
+                padding: .5em 1em;
+                @include corner_right();
+                @include border();
+                transform: translate(0px, 50px);
+                background-color: $orange_dark;
+                box-shadow: $shadow;
+            }
+
         }
         .autor__articulo{
             width: 300px;
@@ -93,3 +111,61 @@ body{
         @include footer();
     }
 }
+// mediaqueries
+@media screen and (max-width: 1200px){
+    body{
+        width: 90%;
+        .inicio{
+            flex-direction: column;
+            padding: 2em;
+            gap: 8em;
+            .description{
+                width: 80%;
+            }
+        }
+        section{
+            flex-direction: column;
+            justify-content: space-between;
+            gap: 3em;
+            align-items: center;
+        }
+    }
+}
+@media screen and (max-width: 768px){
+    body{
+        width: 95%;
+        section{
+            div{
+                article{
+                    width: 400px;
+                    h2{
+                        line-height: 1em;
+                    }
+                    p{
+                        font-size: 1em;
+                    } 
+                }
+                .genero{
+                    padding: .5em .3em;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 576px){
+    body{
+        section{
+            div{
+                article{
+                    width: 350px;
+                }
+            }
+        }
+    }
+}
+// @media screen and (max-width: 468px){
+    
+// }
+// @media screen and (max-width: 360px){
+    
+// }
