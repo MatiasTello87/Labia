@@ -47,7 +47,7 @@ body{
     section{
         display: flex;
         justify-content: space-between;
-        align-items: start;
+        align-items: flex-end;
         margin: 10em 0;
         padding: 5em 0;
         border-bottom: 1px inset black;
@@ -92,9 +92,13 @@ body{
                 box-shadow: $shadow;
             }
         }
-        .autor__articulo{
-            width: 300px;
-            padding: 1em;
+        .autor_articulo{
+            // width: 400px;
+            padding: 2em;
+            display: flex;
+            justify-content: space-between;
+            align-items: start;
+            gap: 2em;
             box-shadow: $shadow;
             @include corner_left();
             @include border();
@@ -127,6 +131,11 @@ body{
             justify-content: space-between;
             gap: 3em;
             align-items: center;
+            .autor_articulo{
+                flex-direction: column;
+                align-items: center;
+                width: 400px;
+            }
         }
     }
 }
@@ -148,6 +157,9 @@ body{
                     padding: .5em .3em;
                 }
             }
+            .autor_articulo{
+                width: 300px;
+            }
         }
     }
 }
@@ -159,7 +171,7 @@ body{
                     width: 350px;
                 }
                 .genero{
-                    transform: translate(-100px, -40px);
+                    transform: translate(-100px, -50px);
                     @include corner_top();
                 }
             }
