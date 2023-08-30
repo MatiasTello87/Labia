@@ -21,7 +21,6 @@
         }
         .hamburguer{
             width: 95%;
-            // height: 30px;
             opacity: .7;
             cursor: pointer;
             &:hover{
@@ -36,8 +35,8 @@
             right: 0;
 
             width: 180px;
-            height: 300px;
-            padding: 1em;
+            height: 400px;
+            padding: 2em;
             display: flex;
             flex-direction: column;
             list-style-type: none;
@@ -47,21 +46,22 @@
             transform: translateY(-1px);
             @include corner_bottom();
             @include border ();
-            background-color: rgba(224, 224, 224, 0.832);
-            // backdrop-filter: blur(4px);
+            background-image: linear-gradient(to right , #0f0f0fee , #030303e8);
+
             box-shadow: 0 0 0 100vmax rgba(0,0,0,.7);
             transition: all 1s ease-in-out;    
             li{
                 list-style-type: none;
                 &:hover{
                     transform: translate(-2px, -3px);
+                    transition: all .3s ease-out;    
                 }
                 a{
-                    color: rgb(3, 3, 3);
+                    color: rgb(226, 226, 226);
                     font-size: 1.3em;
                     text-decoration: none;
                     &:hover{
-                        color: $orange;
+                        color: $blue;
                     }
                 }
                 button{
@@ -74,7 +74,6 @@
                     @include border();
                     border-radius: 50%;
                     box-shadow: $shadow;
-                   
                 }
             }
         }

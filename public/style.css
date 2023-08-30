@@ -82,8 +82,8 @@ body header nav {
   top: 0;
   right: 0;
   width: 180px;
-  height: 300px;
-  padding: 1em;
+  height: 400px;
+  padding: 2em;
   display: flex;
   flex-direction: column;
   list-style-type: none;
@@ -94,7 +94,7 @@ body header nav {
   border-bottom-left-radius: 15px;
   border-bottom-right-radius: 15px;
   border: 1px inset black;
-  background-color: rgba(224, 224, 224, 0.832);
+  background-image: linear-gradient(to right, rgba(15, 15, 15, 0.9333333333), rgba(3, 3, 3, 0.9098039216));
   box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.7);
   transition: all 1s ease-in-out;
 }
@@ -103,14 +103,15 @@ body header nav li {
 }
 body header nav li:hover {
   transform: translate(-2px, -3px);
+  transition: all 0.3s ease-out;
 }
 body header nav li a {
-  color: rgb(3, 3, 3);
+  color: rgb(226, 226, 226);
   font-size: 1.3em;
   text-decoration: none;
 }
 body header nav li a:hover {
-  color: rgba(221, 114, 48, 0.7058823529);
+  color: #5F7995;
 }
 body header nav li button {
   width: 30px;
