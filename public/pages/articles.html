@@ -9,15 +9,25 @@
 <body>
     <header class="header">
         <a href="/public/index.html"><img class="icon_logo" src="/public/img/logo.jpg" alt=""></a>
-        <img src="/public/img/hamburguer.png" alt="">
+        <div>
+            <img class="hamburguer" id="hamburguer" src="/public/img/hamburguer.png" alt="">
+            <nav id="nav">
+                <li><a href="">Articulos</a></li>
+                <li><a href="">Videominuto</a></li>
+                <li><a href="">Agenda</a></li>
+                <li><a href="">Talleres</a></li>
+                <li><a href="">Contacto</a></li>
+                <li id="x"><button>X</button></li>
+            </nav>
+        </div>
     </header>
-    <h1>Artículos</h1>
-    <section>
-        <article>
-            <div class="article">
+    <section class="article_section">
+        <h3>Artículos</h3>
+        <article class="article_article">
+            <div>
                 <h1>Fenomenología de la danza.</h1>
-                <h2 class="article__subtittle">El cuerpo como terreno de lo Sagrado.</h2>
-                <h2 class="article__subtittle article__subtittle--dos">Una perspectiva desde Mircea Eliade.</h2>
+                <h2>El cuerpo como terreno de lo Sagrado.</h2>
+                <h2>Una perspectiva desde Mircea Eliade.</h2>
                 <h4>Introducción.</h4>
                 <p>Este trabajo indaga sobre los eventos fenomenológicos que pueden ocurrir en el campo de la danza, en cuanto se proyectan en escena; como se dijo, el método para observar el hecho artístico será el fenomenológico procurando así realizar una lectura o una perspectiva de lo que los intérpretes pueden experimentar. Para esto, se utilizará la teoría de Edmund Husserl para así arribar a las conceptualizaciones de Mircea Eliade sobre su noción de <i>Hierofanía</i>, una noción que, si bien se encuentra dirigida hacia lo religioso, esta puede ser tomada en su sentido más primario o más básico para reflexionar sobre el tema que nos convoca.</p>
                 <h3>Palabras claves.</h3>
@@ -73,6 +83,6 @@
             </div>
         </article>
     </section>
-    
+    <script src="/public/listener.js"></script>
 </body>
 </html>

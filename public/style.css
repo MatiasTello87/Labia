@@ -1,4 +1,33 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400&display=swap");
+.article_section {
+  flex-direction: column;
+  margin: 5em 0;
+  padding: 2em;
+}
+.article_section h3 {
+  color: rgba(221, 114, 48, 0.7058823529);
+}
+.article_section .article_article div {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+.article_section .article_article div h1 {
+  color: #5F7995;
+  font-size: 3em;
+  margin-bottom: 1em;
+  line-height: 1em;
+}
+.article_section .article_article div h2:first-of-type {
+  transform: translateY(10px);
+}
+.article_section .article_article div h2 {
+  line-height: 1em;
+}
+.article_section .article_article div h4 {
+  margin-top: 5em;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -87,9 +116,9 @@ body header nav li button {
   width: 30px;
   height: 30px;
   font-weight: 600;
-  color: white;
+  background-color: rgb(18, 18, 18);
+  color: aliceblue;
   cursor: pointer;
-  background-color: rgb(114, 33, 33);
   border: 1px inset black;
   border-radius: 50%;
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.176);
@@ -233,6 +262,7 @@ body footer .contacto a img {
     flex-direction: column;
     align-items: center;
     width: 400px;
+    text-align: start;
   }
 }
 @media screen and (max-width: 768px) {
@@ -258,6 +288,7 @@ body footer .contacto a img {
 @media screen and (max-width: 576px) {
   body section div article {
     width: 350px;
+    transform: translateX(40px);
   }
   body section div .genero {
     transform: translate(-100px, -50px);

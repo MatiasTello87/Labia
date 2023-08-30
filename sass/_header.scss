@@ -68,10 +68,9 @@
                     width: 30px;
                     height: 30px;
                     font-weight: 600;
-                    // font-size: 1.3em;
-                    color: white;
+                    background-color: rgb(18, 18, 18);
+                    color: aliceblue;
                     cursor: pointer;
-                    background-color: rgb(114, 33, 33);
                     @include border();
                     border-radius: 50%;
                     box-shadow: $shadow;

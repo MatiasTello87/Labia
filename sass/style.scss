@@ -8,8 +8,9 @@
 @import 'header';
 // footer
 @import 'footer';
-// // mediaqueries
-// @import 'mediaqueries';
+
+// pages- articulos
+@import 'articulos/articulos';
 
 
 *{
@@ -115,72 +116,4 @@ body{
     }
 }
 // mediaqueries
-@media screen and (max-width: 1200px){
-    body{
-        width: 90%;
-        .inicio{
-            flex-direction: column;
-            padding: 2em;
-            gap: 8em;
-            .description{
-                width: 80%;
-            }
-        }
-        section{
-            flex-direction: column;
-            justify-content: space-between;
-            gap: 3em;
-            align-items: center;
-            .autor_articulo{
-                flex-direction: column;
-                align-items: center;
-                width: 400px;
-            }
-        }
-    }
-}
-@media screen and (max-width: 768px){
-    body{
-        width: 95%;
-        section{
-            div{
-                article{
-                    width: 400px;
-                    h2{
-                        line-height: 1em;
-                    }
-                    p{
-                        font-size: 1em;
-                    } 
-                }
-                .genero{
-                    padding: .5em .3em;
-                }
-            }
-            .autor_articulo{
-                width: 300px;
-            }
-        }
-    }
-}
-@media screen and (max-width: 576px){
-    body{
-        section{
-            div{
-                article{
-                    width: 350px;
-                }
-                .genero{
-                    transform: translate(-100px, -50px);
-                    @include corner_top();
-                }
-            }
-        }
-    }
-}
-// @media screen and (max-width: 468px){
-    
-// }
-// @media screen and (max-width: 360px){
-    
-// }
+@import 'mediaqueries';
