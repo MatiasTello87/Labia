@@ -64,12 +64,11 @@
                         color: $blue;
                     }
                 }
-                button{
+                img{
                     width: 30px;
                     height: 30px;
                     font-weight: 600;
                     background-color: rgb(18, 18, 18);
-                    color: aliceblue;
                     cursor: pointer;
                     @include border();
                     border-radius: 50%;

@@ -113,12 +113,11 @@ body header nav li a {
 body header nav li a:hover {
   color: #5F7995;
 }
-body header nav li button {
+body header nav li img {
   width: 30px;
   height: 30px;
   font-weight: 600;
   background-color: rgb(18, 18, 18);
-  color: aliceblue;
   cursor: pointer;
   border: 1px inset black;
   border-radius: 50%;
