@@ -57,7 +57,7 @@
                     transition: all .3s ease-out;    
                 }
                 a{
-                    color: rgb(226, 226, 226);
+                    color: $gray;
                     font-size: 1.3em;
                     text-decoration: none;
                     &:hover{

@@ -40,7 +40,7 @@ body {
   background-image: linear-gradient(to right, #181818, #0a0a0a);
   font-family: "Lato";
   font-weight: 500;
-  color: #c4c4c4;
+  color: #9f9f9f;
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.176);
   overflow-x: hidden;
 }
@@ -106,7 +106,7 @@ body header nav li:hover {
   transition: all 0.3s ease-out;
 }
 body header nav li a {
-  color: rgb(226, 226, 226);
+  color: #9f9f9f;
   font-size: 1.3em;
   text-decoration: none;
 }
@@ -162,7 +162,7 @@ body section div article {
   flex-direction: column;
   width: 500px;
   padding: 2em;
-  color: #c4c4c4;
+  color: #9f9f9f;
   gap: 1em;
   z-index: 1;
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.176);
@@ -213,9 +213,11 @@ body section .autor_articulo img {
 }
 body footer {
   height: 80px;
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   justify-content: space-between;
   align-items: center;
+  justify-items: center;
   padding: 1em;
   color: rgba(221, 114, 48, 0.7058823529);
   border: 1px inset black;
