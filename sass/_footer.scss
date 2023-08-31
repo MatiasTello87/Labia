@@ -10,10 +10,12 @@
     @include border();
     @include corner_top();
     box-shadow: $shadow;
-    img{
-        width: 40px;
-        height: 40px;
-        border-radius: 50%;
+    a{
+        img{
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+        }
     }
     .contacto{
         display: flex;
