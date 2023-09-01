@@ -28,6 +28,60 @@
   margin-top: 5em;
 }
 
+h3 {
+  color: rgba(221, 114, 48, 0.7058823529);
+  text-align: end;
+  margin-right: 4em;
+  font-size: 2em;
+}
+
+.taller_grid {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 15px;
+  padding: 2em;
+  margin: 3em 0;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  border: 1px inset black;
+}
+.taller_grid .taller_grid_items {
+  width: 99%;
+  height: 330px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.176);
+}
+.taller_grid .taller_grid_items .taller_descripcion {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 2em;
+}
+.taller_grid .taller_grid_items .taller_descripcion p {
+  width: 60%;
+}
+.taller_grid .taller_grid_items .taller_descripcion .taller_contacto {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+.taller_grid .taller_grid_items .taller_descripcion img {
+  width: 20px;
+}
+.taller_grid .taller_grid_items .taller_descripcion_right {
+  align-items: flex-end;
+  text-align: end;
+}
+.taller_grid .taller_grid_items .taller_descripcion_right h3 {
+  margin: 0;
+}
+
 * {
   margin: 0;
   padding: 0;
