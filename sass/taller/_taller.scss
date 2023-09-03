@@ -12,23 +12,31 @@ h3{
         align-items: center;
         grid-template-columns: repeat(1,1fr);
         // grid-template-rows: repeat(2,1fr);
-        gap: 15px;
+        gap: 25px;
         padding: 2em;
         margin: 3em 0;
         @include corner_top();
         @include border();
         .taller_grid_items{
-            width: 99%;
             height: 330px;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
             @include corner_top();
             @include corner_bottom();
             box-shadow: $shadow;
+            .taller_flyers{
+                height: 90%;
+            }
             .taller_descripcion{
                 display: flex;
                 flex-direction: column;
                 align-items: flex-start;
                 gap: 10px;
                 padding: 2em;
+                .taller_tittle{
+                    color: $blue;
+                }
                 p{
                     width: 60%;
                 }

@@ -25,7 +25,7 @@
   line-height: 1em;
 }
 .article_section .article_article div h4 {
-  margin-top: 5em;
+  color: #5F7995;
 }
 
 h3 {
@@ -40,7 +40,7 @@ h3 {
   justify-items: center;
   align-items: center;
   grid-template-columns: repeat(1, 1fr);
-  gap: 15px;
+  gap: 25px;
   padding: 2em;
   margin: 3em 0;
   border-top-left-radius: 15px;
@@ -48,13 +48,18 @@ h3 {
   border: 1px inset black;
 }
 .taller_grid .taller_grid_items {
-  width: 99%;
   height: 330px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
   border-bottom-left-radius: 15px;
   border-bottom-right-radius: 15px;
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.176);
+}
+.taller_grid .taller_grid_items .taller_flyers {
+  height: 90%;
 }
 .taller_grid .taller_grid_items .taller_descripcion {
   display: flex;
@@ -62,6 +67,9 @@ h3 {
   align-items: flex-start;
   gap: 10px;
   padding: 2em;
+}
+.taller_grid .taller_grid_items .taller_descripcion .taller_tittle {
+  color: #5F7995;
 }
 .taller_grid .taller_grid_items .taller_descripcion p {
   width: 60%;
@@ -196,7 +204,7 @@ body .inicio .description {
   width: 50%;
   font-size: 1.3em;
 }
-body section {
+body .index_section {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
@@ -208,10 +216,10 @@ body section {
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.176);
   line-height: 1.4em;
 }
-body section div {
+body .index_section div {
   display: flex;
 }
-body section div article {
+body .index_section div article {
   display: flex;
   flex-direction: column;
   width: 500px;
@@ -224,21 +232,22 @@ body section div article {
   border-bottom-right-radius: 15px;
   border: 1px inset black;
 }
-body section div article h2 {
+body .index_section div article h2 {
   font-size: 2em;
   color: #5F7995;
+  margin-bottom: 2em;
 }
-body section div article p {
+body .index_section div article p {
   font-size: 1.2em;
 }
-body section div article a {
+body .index_section div article a {
   text-decoration: none;
   color: #5F7995;
 }
-body section div article a:hover {
+body .index_section div article a:hover {
   font-size: 1.2em;
 }
-body section div .genero {
+body .index_section div .genero {
   height: 50px;
   padding: 0.5em 1em;
   border-top-right-radius: 15px;
@@ -248,7 +257,12 @@ body section div .genero {
   background-color: rgba(221, 114, 48, 0.5882352941);
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.176);
 }
-body section .autor_articulo {
+body .index_section div .genero .genero_tittle {
+  font-size: 1.5em;
+  color: whitesmoke;
+  margin-right: 0;
+}
+body .index_section .autor_articulo {
   padding: 2em;
   display: flex;
   justify-content: space-between;
@@ -260,7 +274,7 @@ body section .autor_articulo {
   border: 1px inset black;
   text-align: end;
 }
-body section .autor_articulo img {
+body .index_section .autor_articulo img {
   width: 80px;
   height: 80px;
   border-radius: 50%;
