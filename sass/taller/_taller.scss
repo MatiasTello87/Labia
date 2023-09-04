@@ -6,18 +6,19 @@ h3{
     margin-right: 4em;
     font-size: 2em;
 }
-.taller_grid{
-        display: grid;
-        justify-items: center;
+.taller_flex{
+        display: flex;
+        justify-content: space-between;
         align-items: center;
-        grid-template-columns: repeat(1,1fr);
+        flex-direction: column;
+        // grid-template-columns: repeat(1,1fr);
         // grid-template-rows: repeat(2,1fr);
         gap: 25px;
         padding: 2em;
         margin: 3em 0;
         @include corner_top();
         @include border();
-        .taller_grid_items{
+        .taller_flex_items{
             height: 330px;
             display: flex;
             justify-content: flex-start;
@@ -26,7 +27,7 @@ h3{
             @include corner_bottom();
             box-shadow: $shadow;
             .taller_flyers{
-                height: 90%;
+                height: 300px;
             }
             .taller_descripcion{
                 display: flex;
@@ -37,7 +38,7 @@ h3{
                 .taller_tittle{
                     color: $blue;
                 }
-                p{
+                .taller_descripcion_p{
                     width: 60%;
                 }
                 .taller_contacto{

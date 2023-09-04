@@ -45,6 +45,25 @@
                 width: 450px;
             }
         }
+        // pag talleres
+        .taller_flex{
+            .taller_flex_items{
+                height: 500px;
+                .taller_flyers{
+                    height: 70% ;
+                }
+                .taller_descripcion{
+                    .taller_tittle{
+                        margin-right: 0;
+                        text-align: start;
+                    }
+                    .taller_descripcion_p{
+                        width: 100%;
+                    }
+                }
+            }
+        }
+        
     }
 }
 @media screen and (max-width: 576px){
@@ -60,6 +79,27 @@
                     transform: translate(-100px, -50px);
                     @include corner_top();
                 }
+            }
+        }
+        .taller_flex{
+            gap: 50px;
+            padding: 0;
+            .taller_flex_items{
+                flex-direction: column;
+                height: 950px;
+                padding: 2em;
+                .taller_flyers{
+                    height: 50%;
+                }
+                .taller_descripcion{
+                    align-items: center;
+                    .taller_descripcion_p{
+                        text-align: start;
+                    }
+                }
+            }
+            .taller_grid_items_right{
+                flex-direction: column-reverse;
             }
         }
     }

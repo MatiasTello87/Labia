@@ -35,11 +35,11 @@ h3 {
   font-size: 2em;
 }
 
-.taller_grid {
-  display: grid;
-  justify-items: center;
+.taller_flex {
+  display: flex;
+  justify-content: space-between;
   align-items: center;
-  grid-template-columns: repeat(1, 1fr);
+  flex-direction: column;
   gap: 25px;
   padding: 2em;
   margin: 3em 0;
@@ -47,7 +47,7 @@ h3 {
   border-top-right-radius: 15px;
   border: 1px inset black;
 }
-.taller_grid .taller_grid_items {
+.taller_flex .taller_flex_items {
   height: 330px;
   display: flex;
   justify-content: flex-start;
@@ -58,35 +58,35 @@ h3 {
   border-bottom-right-radius: 15px;
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.176);
 }
-.taller_grid .taller_grid_items .taller_flyers {
-  height: 90%;
+.taller_flex .taller_flex_items .taller_flyers {
+  height: 300px;
 }
-.taller_grid .taller_grid_items .taller_descripcion {
+.taller_flex .taller_flex_items .taller_descripcion {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   gap: 10px;
   padding: 2em;
 }
-.taller_grid .taller_grid_items .taller_descripcion .taller_tittle {
+.taller_flex .taller_flex_items .taller_descripcion .taller_tittle {
   color: #5F7995;
 }
-.taller_grid .taller_grid_items .taller_descripcion p {
+.taller_flex .taller_flex_items .taller_descripcion .taller_descripcion_p {
   width: 60%;
 }
-.taller_grid .taller_grid_items .taller_descripcion .taller_contacto {
+.taller_flex .taller_flex_items .taller_descripcion .taller_contacto {
   display: flex;
   justify-content: space-between;
   gap: 10px;
 }
-.taller_grid .taller_grid_items .taller_descripcion img {
+.taller_flex .taller_flex_items .taller_descripcion img {
   width: 20px;
 }
-.taller_grid .taller_grid_items .taller_descripcion_right {
+.taller_flex .taller_flex_items .taller_descripcion_right {
   align-items: flex-end;
   text-align: end;
 }
-.taller_grid .taller_grid_items .taller_descripcion_right h3 {
+.taller_flex .taller_flex_items .taller_descripcion_right h3 {
   margin: 0;
 }
 
@@ -354,6 +354,19 @@ body footer .contacto a img {
   body .index_section .autor_articulo {
     width: 450px;
   }
+  body .taller_flex .taller_flex_items {
+    height: 500px;
+  }
+  body .taller_flex .taller_flex_items .taller_flyers {
+    height: 70%;
+  }
+  body .taller_flex .taller_flex_items .taller_descripcion .taller_tittle {
+    margin-right: 0;
+    text-align: start;
+  }
+  body .taller_flex .taller_flex_items .taller_descripcion .taller_descripcion_p {
+    width: 100%;
+  }
 }
 @media screen and (max-width: 576px) {
   body .index_section {
@@ -367,6 +380,27 @@ body footer .contacto a img {
     transform: translate(-100px, -50px);
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
+  }
+  body .taller_flex {
+    gap: 50px;
+    padding: 0;
+  }
+  body .taller_flex .taller_flex_items {
+    flex-direction: column;
+    height: 950px;
+    padding: 2em;
+  }
+  body .taller_flex .taller_flex_items .taller_flyers {
+    height: 50%;
+  }
+  body .taller_flex .taller_flex_items .taller_descripcion {
+    align-items: center;
+  }
+  body .taller_flex .taller_flex_items .taller_descripcion .taller_descripcion_p {
+    text-align: start;
+  }
+  body .taller_flex .taller_grid_items_right {
+    flex-direction: column-reverse;
   }
 }
 @media screen and (max-width: 468px) {
