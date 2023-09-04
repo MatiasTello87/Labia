@@ -92,14 +92,15 @@
                     height: 50%;
                 }
                 .taller_descripcion{
-                    align-items: center;
-                    .taller_descripcion_p{
-                        text-align: start;
-                    }
+                    align-items: start;
+                }
+                .taller_descripcion_p{
+                    text-align: start;
                 }
             }
-            .taller_grid_items_right{
+            .taller_flex_items_right{
                 flex-direction: column-reverse;
+                // align-items: start;
             }
         }
     }

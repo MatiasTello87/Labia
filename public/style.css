@@ -394,12 +394,12 @@ body footer .contacto a img {
     height: 50%;
   }
   body .taller_flex .taller_flex_items .taller_descripcion {
-    align-items: center;
+    align-items: start;
   }
-  body .taller_flex .taller_flex_items .taller_descripcion .taller_descripcion_p {
+  body .taller_flex .taller_flex_items .taller_descripcion_p {
     text-align: start;
   }
-  body .taller_flex .taller_grid_items_right {
+  body .taller_flex .taller_flex_items_right {
     flex-direction: column-reverse;
   }
 }
