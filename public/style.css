@@ -322,13 +322,13 @@ body footer .contacto a img {
   body .inicio .description {
     width: 80%;
   }
-  body section {
+  body .index_section {
     flex-direction: column;
     justify-content: space-between;
     gap: 3em;
     align-items: center;
   }
-  body section .autor_articulo {
+  body .index_section .autor_articulo {
     flex-direction: column;
     align-items: center;
     width: 400px;
@@ -339,31 +339,45 @@ body footer .contacto a img {
   body {
     width: 95%;
   }
-  body section div article {
-    width: 400px;
+  body .index_section div article {
+    width: 450px;
   }
-  body section div article h2 {
+  body .index_section div article h2 {
     line-height: 1em;
   }
-  body section div article p {
+  body .index_section div article p {
     font-size: 1em;
   }
-  body section div .genero {
+  body .index_section div .genero {
     padding: 0.5em 0.3em;
   }
-  body section .autor_articulo {
-    width: 300px;
+  body .index_section .autor_articulo {
+    width: 450px;
   }
 }
 @media screen and (max-width: 576px) {
-  body section div article {
-    width: 350px;
-    transform: translateX(40px);
+  body .index_section {
+    align-items: center;
   }
-  body section div .genero {
+  body .index_section div article {
+    width: 400px;
+    transform: translateX(50px);
+  }
+  body .index_section div .genero {
     transform: translate(-100px, -50px);
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
+  }
+}
+@media screen and (max-width: 468px) {
+  body {
+    width: 100%;
+  }
+  body .index_section div article {
+    width: 350px;
+  }
+  body .index_section .autor_articulo {
+    width: 350px;
   }
 }
 

@@ -9,7 +9,7 @@
                 width: 80%;
             }
         }
-        section{
+        .index_section{
             flex-direction: column;
             justify-content: space-between;
             gap: 3em;
@@ -26,10 +26,10 @@
 @media screen and (max-width: 768px){
     body{
         width: 95%;
-        section{
+        .index_section{
             div{
                 article{
-                    width: 400px;
+                    width: 450px;
                     h2{
                         line-height: 1em;
                     }
@@ -42,18 +42,19 @@
                 }
             }
             .autor_articulo{
-                width: 300px;
+                width: 450px;
             }
         }
     }
 }
 @media screen and (max-width: 576px){
     body{
-        section{
+        .index_section{
+            align-items: center;
             div{
                 article{
-                    width: 350px;
-                    transform: translateX(40px);
+                    width: 400px;
+                    transform: translateX(50px);
                 }
                 .genero{
                     transform: translate(-100px, -50px);
@@ -63,9 +64,22 @@
         }
     }
 }
-// @media screen and (max-width: 468px){
-    
-// }
+@media screen and (max-width: 468px){
+    body{
+        width: 100%;
+        .index_section{
+            div{
+                article{
+                    width: 350px;
+                }
+            }
+            .autor_articulo{
+                width: 350px;
+            }
+
+        }
+    }
+}
 // @media screen and (max-width: 360px){
     
 // }
