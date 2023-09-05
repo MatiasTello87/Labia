@@ -90,6 +90,18 @@ h3 {
   margin: 0;
 }
 
+.contacto_section {
+  background-color: chocolate;
+}
+
+.agenda_section {
+  background-color: aquamarine;
+}
+
+.videos_section {
+  background-color: yellow;
+}
+
 * {
   margin: 0;
   padding: 0;
