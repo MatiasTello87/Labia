@@ -8,6 +8,8 @@
 @import 'header';
 // footer
 @import 'footer';
+// solapa
+@import 'solapa';
 
 // pages- articulos
 @import 'articulos/articulos';
@@ -17,8 +19,8 @@
 @import 'contacto/contacto';
 // pages- agenda
 @import 'agenda/agenda';
-// pages- videos
-@import 'videos/videos';
+// page - proximamente
+@import 'proximamente/proximamente';
 
 
 *{
@@ -93,22 +95,10 @@ body{
                 }
             }
             .genero{
-                height: 50px;
-                padding: .5em 1em;
-                @include corner_right();
-                @include border();
-                transform: translate(0px, 50px);
-                background-color: $orange_dark;
-                box-shadow: $shadow;
-                .genero_tittle{
-                    font-size: 1.5em;
-                    color: whitesmoke;
-                    margin-right: 0;
-                }
+                @include solapa();
             }
         }
         .autor_articulo{
-            // width: 400px;
             padding: 2em;
             display: flex;
             justify-content: space-between;
@@ -124,6 +114,36 @@ body{
                 border-radius: 50%;
             }
         }
+    }
+    .videoteca_index{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: start;
+        gap: 25px;
+        margin-left: 3em;
+        @include corner_bottom();
+        border-bottom: 1px inset black;
+        border-right: 1px inset black;
+        box-shadow: $shadow;
+        .genero{
+            @include solapa();
+            width: 150px;
+            transform: translateY(-60px);
+            }
+            h2{
+                font-size: 2em;
+                color: $blue;
+                margin-bottom: 0;
+            }
+            p{
+                width: 40%;
+            }
+            iframe{
+                width: 760px;
+                height: 415px;
+            }
+    
     }
     footer{
         @include footer();

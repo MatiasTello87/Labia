@@ -3,6 +3,9 @@
 @mixin border(){
     border: 1px inset black;
 }
+@mixin border_radius(){
+    border-radius: 15px;
+}
 
 @mixin corner_bottom(){
     border-bottom-left-radius: 15px;

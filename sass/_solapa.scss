@@ -1,0 +1,19 @@
+@mixin solapa(){
+    height: 50px;
+    width: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2em 1em;
+    
+    @include corner_right();
+    @include border();
+    transform: translate(0px, 50px);
+    background-color: $orange_dark;
+    box-shadow: $shadow;
+    .genero_tittle{
+        font-size: 1.5em;
+        color: $gray;
+        margin-right: 0;
+    }
+}
