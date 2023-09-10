@@ -79,9 +79,8 @@ body{
                 @include corner_right();
                 @include border();
                 h2{
-                    font-size: 2em;
-                    color: $blue;
-                    margin-bottom: 2em;
+                    @include titles();
+                    
                 }
                 p{
                     font-size: 1.2em;
@@ -121,7 +120,7 @@ body{
         justify-content: space-between;
         align-items: start;
         gap: 25px;
-        margin-left: 3em;
+        padding: 3em;
         @include corner_bottom();
         border-bottom: 1px inset black;
         border-right: 1px inset black;
@@ -132,17 +131,19 @@ body{
             transform: translateY(-60px);
             }
             h2{
-                font-size: 2em;
-                color: $blue;
-                margin-bottom: 0;
+                @include titles();
             }
             p{
                 width: 40%;
             }
-            iframe{
-                width: 760px;
-                height: 415px;
-            }
+             div{
+                 width: 100%;
+                 height: 500px;
+            } iframe{
+                width: 100%;
+               height: 100%;
+           }
+                
     
     }
     footer{

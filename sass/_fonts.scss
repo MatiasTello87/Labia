@@ -24,7 +24,7 @@ $shadow_title: 2px 1px 10px opacify($color: #2c2c2c, $amount: 0);
 
 @mixin titles (){
     font-size: $size_title;
-    margin: $margin_little;
-    text-shadow: $shadow_title;
+    color: $blue;
+    line-height: 1em;
 }
 
