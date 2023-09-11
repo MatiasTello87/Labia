@@ -104,8 +104,8 @@ h3 {
 }
 .body_proximamente .proximamente {
   width: 80%;
-  margin: 7em auto;
-  padding: 5em;
+  margin: 5em auto;
+  padding: 4em;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -115,6 +115,9 @@ h3 {
   border-radius: 15px;
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.176);
   text-transform: uppercase;
+}
+.body_proximamente .proximamente h2 {
+  text-align: center;
 }
 
 * {

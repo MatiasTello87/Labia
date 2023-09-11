@@ -4,8 +4,8 @@
 
     .proximamente{
         width: 80%;
-        margin: 7em auto;
-        padding: 5em;
+        margin: 5em auto;
+        padding: 4em;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -15,5 +15,8 @@
         @include border-radius();
         box-shadow: $shadow;
         text-transform: uppercase;
+        h2{
+            text-align: center;
+        }
     }
 }
