@@ -37,10 +37,10 @@ body{
     gap: 5em;
     width: 80%;
     margin: 0 auto;
-    background-image: linear-gradient(to right , #181818 , #0a0a0a);
+    background-image: linear-gradient(to right , $black , $black-dark);
     font-family: 'Lato';
     font-weight: 500;
-    color: $gray;
+    color: $white;
     box-shadow: $shadow;
     overflow-x: hidden;
     header{
@@ -52,7 +52,7 @@ body{
         align-items: center;
         gap: 2em;
         padding: 5em;
-        border-bottom: 1px inset black;
+        border-bottom: 1px inset $black-dark;
         @include corner_bottom();
         box-shadow: $shadow;
         .description{
@@ -64,9 +64,8 @@ body{
         display: flex;
         justify-content: space-between;
         align-items: flex-end;
-        // margin: 10em 0;
         padding: 5em 0;
-        border-bottom: 1px inset black;
+        border-bottom: 1px inset $black-dark;
         @include corner_bottom();
         box-shadow: $shadow;
         line-height: 1.4em;
@@ -77,7 +76,7 @@ body{
                 flex-direction: column;
                 width: 500px;
                 padding: 2em;
-                color: $gray;
+                color: $white;
                 gap: 1em;
                 z-index: 1;
                 box-shadow: $shadow;
@@ -85,7 +84,6 @@ body{
                 @include border();
                 h2{
                     @include titles();
-
                 }
                 p{
                     font-size: 1.2em;
@@ -144,8 +142,8 @@ body{
         .contacto_index{
             @include container_section();
             width: 60%;
-            border-top: 1px inset black;
-            border-left: 1px inset black;
+            border-top: 1px inset $black-dark;
+            border-left: 1px inset $black-dark;
             flex-direction: row;
             justify-content: space-evenly;
             align-items: center;

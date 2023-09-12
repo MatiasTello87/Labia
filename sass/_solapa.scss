@@ -6,14 +6,13 @@
     align-items: center;
     padding: 2em 1em;
     
-    @include corner_right();
-    @include border();
+    @include corner_top();
     transform: translate(0px, 50px);
-    background-color: $orange_dark;
+    background-image: linear-gradient(to bottom right , #602621 , #200d0c);
     box-shadow: $shadow;
     .genero_tittle{
         font-size: 1.5em;
-        color: $gray;
+        color: $white;
         margin-right: 0;
     }
 }
