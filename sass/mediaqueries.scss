@@ -44,7 +44,7 @@
 }
 @media screen and (max-width: 768px){
     body{
-        width: 95%;
+        // width: 95%;
         .index_section{
             div{
                 article{
@@ -159,8 +159,11 @@
     }
 }
 @media screen and (max-width: 468px){
+    html{
+        width: 108vw;
+    }
     body{
-        width: 90%;
+        height: -webkit-fill-available;
         .index_section{
             div{
                 article{
@@ -186,7 +189,7 @@
         }
         .aporte_index{
             button{
-                transform: translateX(180px);
+                transform: translateX(150px);
             }
         }
         footer{
