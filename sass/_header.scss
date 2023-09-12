@@ -11,7 +11,6 @@
         @include corner_bottom();
         box-shadow: $shadow;
         backdrop-filter: blur(4px);
-        margin-bottom: 5em;
         .icon_logo{
             width: 50px;
             height: 50px;

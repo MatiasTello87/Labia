@@ -23,3 +23,16 @@
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
 }
+// contenedores de sección
+@mixin container_section (){
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    gap: 25px;
+    padding: 3em;
+    @include corner_bottom();
+    border-bottom: 1px inset black;
+    border-right: 1px inset black;
+    box-shadow: $shadow;
+}

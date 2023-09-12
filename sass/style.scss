@@ -30,6 +30,10 @@
 }
 
 body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 5em;
     width: 80%;
     margin: 0 auto;
     background-image: linear-gradient(to right , #181818 , #0a0a0a);
@@ -59,7 +63,7 @@ body{
         display: flex;
         justify-content: space-between;
         align-items: flex-end;
-        margin: 10em 0;
+        // margin: 10em 0;
         padding: 5em 0;
         border-bottom: 1px inset black;
         @include corner_bottom();
@@ -80,7 +84,7 @@ body{
                 @include border();
                 h2{
                     @include titles();
-                    
+
                 }
                 p{
                     font-size: 1.2em;
@@ -115,16 +119,7 @@ body{
         }
     }
     .videoteca_index{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: start;
-        gap: 25px;
-        padding: 3em;
-        @include corner_bottom();
-        border-bottom: 1px inset black;
-        border-right: 1px inset black;
-        box-shadow: $shadow;
+        @include container_section();
         .genero{
             @include solapa();
             width: 150px;
@@ -134,7 +129,7 @@ body{
                 @include titles();
             }
             p{
-                width: 40%;
+                width: 90%;
             }
              div{
                  width: 100%;
@@ -143,9 +138,32 @@ body{
                 width: 100%;
                height: 100%;
            }
-                
-    
-    }
+           
+        }
+        .contacto_index{
+            @include container_section();
+            border-top: 1px inset black;
+            border-left: 1px inset black;
+            h2{
+                @include titles();
+
+            }
+        }
+        .aporte_index{
+            @include container_section();
+                 button{
+                    padding: .3em 1em;
+                    background-color: #0277a9;
+                    border-radius: 5px;
+                    box-shadow: $shadow;
+                    &:hover{
+                        background-color: #009ee3;;
+                    }
+                }
+                h2{
+                    @include titles();
+                }
+        }
     footer{
         @include footer();
     }

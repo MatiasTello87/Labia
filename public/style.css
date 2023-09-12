@@ -13,7 +13,7 @@
   gap: 2em;
 }
 .article_section .article_article div h1 {
-  color: #5F7995;
+  color: #5e87b3;
   font-size: 3em;
   margin-bottom: 1em;
   line-height: 1em;
@@ -25,7 +25,7 @@
   line-height: 1em;
 }
 .article_section .article_article div h4 {
-  color: #5F7995;
+  color: #5e87b3;
 }
 
 h3 {
@@ -69,7 +69,7 @@ h3 {
   padding: 2em;
 }
 .taller_flex .taller_flex_items .taller_descripcion .taller_tittle {
-  color: #5F7995;
+  color: #5e87b3;
 }
 .taller_flex .taller_flex_items .taller_descripcion .taller_descripcion_p {
   width: 60%;
@@ -127,12 +127,16 @@ h3 {
 }
 
 body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 5em;
   width: 80%;
   margin: 0 auto;
   background-image: linear-gradient(to right, #181818, #0a0a0a);
   font-family: "Lato";
   font-weight: 500;
-  color: #9f9f9f;
+  color: #c1c1c1;
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.176);
   overflow-x: hidden;
 }
@@ -150,7 +154,6 @@ body header {
   border-bottom-right-radius: 15px;
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.176);
   backdrop-filter: blur(4px);
-  margin-bottom: 5em;
 }
 body header .icon_logo {
   width: 50px;
@@ -198,12 +201,12 @@ body header nav li:hover {
   transition: all 0.3s ease-out;
 }
 body header nav li a {
-  color: #9f9f9f;
+  color: #c1c1c1;
   font-size: 1.3em;
   text-decoration: none;
 }
 body header nav li a:hover {
-  color: #5F7995;
+  color: #5e87b3;
 }
 body header nav li img {
   width: 30px;
@@ -238,7 +241,6 @@ body .index_section {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-  margin: 10em 0;
   padding: 5em 0;
   border-bottom: 1px inset black;
   border-bottom-left-radius: 15px;
@@ -254,7 +256,7 @@ body .index_section div article {
   flex-direction: column;
   width: 500px;
   padding: 2em;
-  color: #9f9f9f;
+  color: #c1c1c1;
   gap: 1em;
   z-index: 1;
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.176);
@@ -264,15 +266,16 @@ body .index_section div article {
 }
 body .index_section div article h2 {
   font-size: 3em;
-  color: #5F7995;
+  color: #5e87b3;
   line-height: 1em;
+  text-shadow: 2px 1px 10px rgba(15, 15, 15, 0.8431372549);
 }
 body .index_section div article p {
   font-size: 1.2em;
 }
 body .index_section div article a {
   text-decoration: none;
-  color: #5F7995;
+  color: #5e87b3;
 }
 body .index_section div article a:hover {
   font-size: 1.2em;
@@ -293,7 +296,7 @@ body .index_section div .genero {
 }
 body .index_section div .genero .genero_tittle {
   font-size: 1.5em;
-  color: #9f9f9f;
+  color: #c1c1c1;
   margin-right: 0;
 }
 body .index_section .autor_articulo {
@@ -344,16 +347,17 @@ body .videoteca_index .genero {
 }
 body .videoteca_index .genero .genero_tittle {
   font-size: 1.5em;
-  color: #9f9f9f;
+  color: #c1c1c1;
   margin-right: 0;
 }
 body .videoteca_index h2 {
   font-size: 3em;
-  color: #5F7995;
+  color: #5e87b3;
   line-height: 1em;
+  text-shadow: 2px 1px 10px rgba(15, 15, 15, 0.8431372549);
 }
 body .videoteca_index p {
-  width: 40%;
+  width: 90%;
 }
 body .videoteca_index div {
   width: 100%;
@@ -362,6 +366,55 @@ body .videoteca_index div {
 body .videoteca_index iframe {
   width: 100%;
   height: 100%;
+}
+body .contacto_index {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: start;
+  gap: 25px;
+  padding: 3em;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  border-bottom: 1px inset black;
+  border-right: 1px inset black;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.176);
+  border-top: 1px inset black;
+  border-left: 1px inset black;
+}
+body .contacto_index h2 {
+  font-size: 3em;
+  color: #5e87b3;
+  line-height: 1em;
+  text-shadow: 2px 1px 10px rgba(15, 15, 15, 0.8431372549);
+}
+body .aporte_index {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: start;
+  gap: 25px;
+  padding: 3em;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  border-bottom: 1px inset black;
+  border-right: 1px inset black;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.176);
+}
+body .aporte_index button {
+  padding: 0.3em 1em;
+  background-color: #0277a9;
+  border-radius: 5px;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.176);
+}
+body .aporte_index button:hover {
+  background-color: #009ee3;
+}
+body .aporte_index h2 {
+  font-size: 3em;
+  color: #5e87b3;
+  line-height: 1em;
+  text-shadow: 2px 1px 10px rgba(15, 15, 15, 0.8431372549);
 }
 body footer {
   height: 80px;

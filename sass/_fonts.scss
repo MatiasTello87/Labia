@@ -18,7 +18,7 @@ $weigth_medium : 500;
 $size_1em: 1em;
 
 // Sombra de titulos
-$shadow_title: 2px 1px 10px opacify($color: #2c2c2c, $amount: 0);
+$shadow_title: 2px 1px 10px opacify($color: #0f0f0fd7, $amount: 0);
 
 // estilos para titulos de cada page
 
@@ -26,5 +26,6 @@ $shadow_title: 2px 1px 10px opacify($color: #2c2c2c, $amount: 0);
     font-size: $size_title;
     color: $blue;
     line-height: 1em;
+    text-shadow: $shadow_title;
 }
 
