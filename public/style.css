@@ -616,7 +616,7 @@ body footer .contacto a img {
 }
 @media screen and (max-width: 468px) {
   body {
-    width: 100%;
+    width: 90%;
   }
   body .index_section div article {
     width: 350px;
