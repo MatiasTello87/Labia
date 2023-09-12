@@ -636,6 +636,14 @@ body footer .contacto a img {
   body .aporte_index button {
     transform: translateX(180px);
   }
+  body footer .contacto {
+    flex-direction: column;
+    gap: 0;
+  }
+  body footer .contacto div a img {
+    width: 20px;
+    height: 20px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

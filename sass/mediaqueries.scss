@@ -189,6 +189,16 @@
                 transform: translateX(180px);
             }
         }
+        footer{
+            .contacto{
+                flex-direction: column;
+                gap: 0;
+                div a img{
+                    width: 20px;
+                    height: 20px;
+                }
+            }
+        }
     }
 }
 // @media screen and (max-width: 360px){
