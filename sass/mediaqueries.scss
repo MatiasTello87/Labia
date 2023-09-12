@@ -37,6 +37,9 @@
                     width: 70%;
                 }
         }
+        .contacto_index{
+            width: 70%;
+        }
     }
 }
 @media screen and (max-width: 768px){
@@ -67,6 +70,18 @@
                 height: 315px;
             }
         }
+        .contacto_index{
+            width: 90%;
+            flex-direction: column;
+            gap: 4em;
+        }
+        .aporte_index{
+            button{
+                transform: translateX(350px);
+
+            }
+        }
+
         // pag talleres
         .taller_flex{
             .taller_flex_items{
@@ -109,6 +124,14 @@
             }
             p{
                 width: 80%;
+            }
+        }
+        .aporte_index{
+            p{
+                width: 80%;
+            }
+            button{
+                transform: translateX(230px);
             }
         }
         .taller_flex{
@@ -159,6 +182,11 @@
             }
             p{
                 width: 90%;
+            }
+        }
+        .aporte_index{
+            button{
+                transform: translateX(180px);
             }
         }
     }

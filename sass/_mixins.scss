@@ -29,7 +29,7 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: start;
-    gap: 25px;
+    gap: 2em;
     padding: 3em;
     @include corner_bottom();
     border-bottom: 1px inset black;

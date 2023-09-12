@@ -142,20 +142,40 @@ body{
         }
         .contacto_index{
             @include container_section();
+            width: 60%;
             border-top: 1px inset black;
             border-left: 1px inset black;
+            flex-direction: row;
+            justify-content: space-evenly;
+            align-items: center;
+            padding: 5em 1em;
+            margin: 0 auto;
             h2{
                 @include titles();
-
+            }
+            .contacto_index_iconos{
+                border-left: 1px inset rgb(240, 239, 239);
+                .contacto_index_iconos_items{
+                    display: flex;
+                    flex-direction: row;
+                    gap: 1em;
+                    transform: translateX(1em);
+                }
             }
         }
         .aporte_index{
             @include container_section();
+            width: 90%;
+            margin: 0 auto;
+                p{
+                    width: 90%;
+                }
                  button{
-                    padding: .3em 1em;
+                    padding: .2em 1em;
                     background-color: #0277a9;
                     border-radius: 5px;
                     box-shadow: $shadow;
+                    font-size: 1em;
                     &:hover{
                         background-color: #009ee3;;
                     }
