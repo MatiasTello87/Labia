@@ -528,7 +528,8 @@ body footer .contacto a img {
     align-items: center;
   }
   body .index_section div article {
-    width: 90%;
+    width: 100%;
+    padding: 1em;
   }
   body .index_section div article h2 {
     line-height: 1em;
@@ -537,7 +538,8 @@ body footer .contacto a img {
     font-size: 1em;
   }
   body .index_section div .autor_articulo {
-    width: 90%;
+    width: 100%;
+    padding: 1em;
   }
   body .videoteca_index div {
     height: 315px;
@@ -565,6 +567,12 @@ body footer .contacto a img {
   }
 }
 @media screen and (max-width: 576px) {
+  body .index_section {
+    padding: 0;
+  }
+  body .index_section div article {
+    padding: 1em;
+  }
   body .videoteca_index div {
     height: 220px;
   }
@@ -573,6 +581,9 @@ body footer .contacto a img {
   }
   body .aporte_index p {
     width: 80%;
+  }
+  body .contacto_index {
+    width: 100%;
   }
   body .taller_flex {
     gap: 50px;
