@@ -579,6 +579,9 @@ body footer .contacto a img {
   body .videoteca_index p {
     width: 80%;
   }
+  body .aporte_index {
+    width: 100%;
+  }
   body .aporte_index p {
     width: 80%;
   }
