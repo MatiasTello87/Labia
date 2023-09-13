@@ -529,7 +529,7 @@ body footer .contacto a img {
   }
   body .index_section div article {
     width: 100%;
-    padding: 1em;
+    padding: 3em 1em;
   }
   body .index_section div article h2 {
     line-height: 1em;
@@ -539,7 +539,7 @@ body footer .contacto a img {
   }
   body .index_section div .autor_articulo {
     width: 100%;
-    padding: 1em;
+    padding: 3em 1em;
   }
   body .videoteca_index div {
     height: 315px;
@@ -569,9 +569,6 @@ body footer .contacto a img {
 @media screen and (max-width: 576px) {
   body .index_section {
     padding: 0;
-  }
-  body .index_section div article {
-    padding: 1em;
   }
   body .videoteca_index div {
     height: 220px;

@@ -48,7 +48,7 @@
                 align-items: center;
                 article{
                     width: 100%;
-                    padding: 1em;
+                    padding: 3em 1em;
                     h2{
                         line-height: 1em;
                     }
@@ -58,7 +58,7 @@
                 }
                 .autor_articulo{
                     width: 100%;
-                    padding: 1em;
+                    padding:3em 1em;
                 }
             }
         }
@@ -105,9 +105,6 @@
     body{
         .index_section{
             padding: 0;
-            div article{
-                padding: 1em;
-            }
         }
         .videoteca_index{
             div{
