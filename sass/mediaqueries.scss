@@ -10,10 +10,6 @@
             }
         }
         .index_section{
-            flex-direction: column;
-            justify-content: space-between;
-            gap: 3em;
-            align-items: center;
             h2{
                 font-size: 2em;
             }
@@ -47,8 +43,11 @@
         // width: 95%;
         .index_section{
             div{
+                flex-direction: column;
+                gap: 3em;
+                align-items: center;
                 article{
-                    width: 450px;
+                    width: 90%;
                     h2{
                         line-height: 1em;
                     }
@@ -56,12 +55,9 @@
                         font-size: 1em;
                     } 
                 }
-                .genero{
-                    padding: .5em .3em;
+                .autor_articulo{
+                    width: 90%;
                 }
-            }
-            .autor_articulo{
-                width: 450px;
             }
         }
         .videoteca_index{
@@ -105,19 +101,6 @@
 }
 @media screen and (max-width: 576px){
     body{
-        .index_section{
-            align-items: center;
-            div{
-                article{
-                    width: 400px;
-                    transform: translateX(50px);
-                }
-                .genero{
-                    transform: translate(-100px, -50px);
-                    @include corner_top();
-                }
-            }
-        }
         .videoteca_index{
             div{
                 height: 220px;
@@ -129,9 +112,6 @@
         .aporte_index{
             p{
                 width: 80%;
-            }
-            button{
-                transform: translateX(230px);
             }
         }
         .taller_flex{
@@ -162,19 +142,13 @@
         width: 108vw;
     }
     body{
-        height: -webkit-fill-available;
         .index_section{
             div{
                 article{
-                    width: 350px;
                     h2{
                         font-size: 2em;
                     }
                 }
-                
-            }
-            .autor_articulo{
-                width: 350px;
             }
             
         }

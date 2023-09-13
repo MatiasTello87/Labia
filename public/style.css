@@ -241,20 +241,41 @@ body .index_section {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-  padding: 5em 0;
+  flex-direction: column;
+  gap: 3em;
+  padding: 5em 1em;
   border-bottom: 1px inset #0a0a0a;
   border-bottom-left-radius: 15px;
   border-bottom-right-radius: 15px;
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.176);
   line-height: 1.4em;
 }
+body .index_section .genero {
+  height: 30px;
+  width: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5em 3.5em;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  background-image: linear-gradient(to bottom right, #602d21, #331918);
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.176);
+}
+body .index_section .genero .genero_tittle {
+  font-size: 1.3em;
+  color: #c1c1c1;
+  margin-right: 0;
+}
 body .index_section div {
   display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
 }
 body .index_section div article {
   display: flex;
   flex-direction: column;
-  width: 500px;
+  width: 50%;
   padding: 2em;
   color: #c1c1c1;
   gap: 1em;
@@ -280,25 +301,9 @@ body .index_section div article a {
 body .index_section div article a:hover {
   font-size: 1.2em;
 }
-body .index_section div .genero {
-  height: 50px;
-  width: 120px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 2em 1em;
-  border-top-left-radius: 15px;
-  border-top-right-radius: 15px;
-  transform: translate(0px, 50px);
-  background-image: linear-gradient(to bottom right, #602621, #200d0c);
-  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.176);
-}
-body .index_section div .genero .genero_tittle {
-  font-size: 1.5em;
-  color: #c1c1c1;
-  margin-right: 0;
-}
-body .index_section .autor_articulo {
+body .index_section div .autor_articulo {
+  height: 40%;
+  width: 40%;
   padding: 2em;
   display: flex;
   justify-content: space-between;
@@ -310,7 +315,7 @@ body .index_section .autor_articulo {
   border: 1px inset #0a0a0a;
   text-align: end;
 }
-body .index_section .autor_articulo img {
+body .index_section div .autor_articulo img {
   width: 80px;
   height: 80px;
   border-radius: 50%;
@@ -329,22 +334,21 @@ body .videoteca_index {
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.176);
 }
 body .videoteca_index .genero {
-  height: 50px;
-  width: 120px;
+  height: 30px;
+  width: 80px;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 2em 1em;
+  padding: 1.5em 3.5em;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
-  transform: translate(0px, 50px);
-  background-image: linear-gradient(to bottom right, #602621, #200d0c);
+  background-image: linear-gradient(to bottom right, #602d21, #331918);
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.176);
   width: 150px;
   transform: translateY(-60px);
 }
 body .videoteca_index .genero .genero_tittle {
-  font-size: 1.5em;
+  font-size: 1.3em;
   color: #c1c1c1;
   margin-right: 0;
 }
@@ -419,14 +423,16 @@ body .aporte_index {
 body .aporte_index p {
   width: 90%;
 }
-body .aporte_index button {
-  padding: 0.2em 1em;
+body .aporte_index a {
+  padding: 0.5em 1em;
   background-color: #0277a9;
-  border-radius: 5px;
+  border-radius: 10px;
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.176);
   font-size: 1em;
+  text-decoration: none;
+  color: white;
 }
-body .aporte_index button:hover {
+body .aporte_index a:hover {
   background-color: #009ee3;
 }
 body .aporte_index h2 {
@@ -492,12 +498,6 @@ body footer .contacto a img {
   body .inicio .description {
     width: 80%;
   }
-  body .index_section {
-    flex-direction: column;
-    justify-content: space-between;
-    gap: 3em;
-    align-items: center;
-  }
   body .index_section h2 {
     font-size: 2em;
   }
@@ -522,8 +522,13 @@ body footer .contacto a img {
   }
 }
 @media screen and (max-width: 768px) {
+  body .index_section div {
+    flex-direction: column;
+    gap: 3em;
+    align-items: center;
+  }
   body .index_section div article {
-    width: 450px;
+    width: 90%;
   }
   body .index_section div article h2 {
     line-height: 1em;
@@ -531,11 +536,8 @@ body footer .contacto a img {
   body .index_section div article p {
     font-size: 1em;
   }
-  body .index_section div .genero {
-    padding: 0.5em 0.3em;
-  }
-  body .index_section .autor_articulo {
-    width: 450px;
+  body .index_section div .autor_articulo {
+    width: 90%;
   }
   body .videoteca_index div {
     height: 315px;
@@ -563,18 +565,6 @@ body footer .contacto a img {
   }
 }
 @media screen and (max-width: 576px) {
-  body .index_section {
-    align-items: center;
-  }
-  body .index_section div article {
-    width: 400px;
-    transform: translateX(50px);
-  }
-  body .index_section div .genero {
-    transform: translate(-100px, -50px);
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
-  }
   body .videoteca_index div {
     height: 220px;
   }
@@ -583,9 +573,6 @@ body footer .contacto a img {
   }
   body .aporte_index p {
     width: 80%;
-  }
-  body .aporte_index button {
-    transform: translateX(230px);
   }
   body .taller_flex {
     gap: 50px;
@@ -613,17 +600,8 @@ body footer .contacto a img {
   html {
     width: 108vw;
   }
-  body {
-    height: -webkit-fill-available;
-  }
-  body .index_section div article {
-    width: 350px;
-  }
   body .index_section div article h2 {
     font-size: 2em;
-  }
-  body .index_section .autor_articulo {
-    width: 350px;
   }
   body .videoteca_index div {
     height: 195px;
