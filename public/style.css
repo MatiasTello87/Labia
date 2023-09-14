@@ -130,7 +130,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  gap: 5em;
+  gap: 10em;
   width: 80%;
   margin: 0 auto;
   background-image: linear-gradient(to right, #181818, #0a0a0a);
