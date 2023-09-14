@@ -570,6 +570,9 @@ body footer .contacto a img {
   }
 }
 @media screen and (max-width: 576px) {
+  body .index_section {
+    padding: 0;
+  }
   body .videoteca_index div {
     height: 220px;
   }
