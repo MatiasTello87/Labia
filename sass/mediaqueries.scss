@@ -42,13 +42,14 @@
     body{
         // width: 95%;
         .index_section{
+            padding: 5em 2em;
             div{
                 flex-direction: column;
                 gap: 3em;
                 align-items: center;
                 article{
                     width: 100%;
-                    padding: 3em 1em;
+                    padding: 3em 2em;
                     h2{
                         line-height: 1em;
                     }
@@ -58,7 +59,7 @@
                 }
                 .autor_articulo{
                     width: 100%;
-                    padding:3em 1em;
+                    padding:3em 2em;
                 }
             }
         }
@@ -103,15 +104,15 @@
 }
 @media screen and (max-width: 576px){
     body{
-        .index_section{
-            padding: 0;
-        }
+        // .index_section{
+        //     padding: 0;
+        // }
         .videoteca_index{
             div{
                 height: 220px;
             }
             p{
-                width: 80%;
+                width: 100%;
             }
         }
         .aporte_index{
@@ -148,15 +149,12 @@
 }
 @media screen and (max-width: 468px){
     html{
-        width: 108vw;
+        width: 105vw;
     }
     body{
         .videoteca_index{
             div{
                 height: 195px;
-            }
-            p{
-                width: 90%;
             }
         }
         .aporte_index{
