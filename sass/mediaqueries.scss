@@ -106,8 +106,12 @@
     body{
         .index_section{
             padding: 0;
+            .genero{
+                margin-right: 2em;
+            }
         }
         .videoteca_index{
+            padding: 2em;
             div{
                 height: 220px;
             }

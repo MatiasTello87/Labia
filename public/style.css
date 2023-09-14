@@ -573,6 +573,12 @@ body footer .contacto a img {
   body .index_section {
     padding: 0;
   }
+  body .index_section .genero {
+    margin-right: 2em;
+  }
+  body .videoteca_index {
+    padding: 2em;
+  }
   body .videoteca_index div {
     height: 220px;
   }
