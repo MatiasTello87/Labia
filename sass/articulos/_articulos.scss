@@ -1,11 +1,13 @@
 .article_section{
     flex-direction: column;
     margin: 5em 0;
-    padding: 2em;
     h3{
         color: $orange;
     }
     .article_article{
+        @include  border();
+        @include corner_right();
+        padding: 2em;
         div{
             display: flex;
             flex-direction: column;

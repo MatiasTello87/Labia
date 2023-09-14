@@ -2,10 +2,15 @@
 .article_section {
   flex-direction: column;
   margin: 5em 0;
-  padding: 2em;
 }
 .article_section h3 {
   color: rgba(221, 114, 48, 0.7058823529);
+}
+.article_section .article_article {
+  border: 1px inset #0a0a0a;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  padding: 2em;
 }
 .article_section .article_article div {
   display: flex;
