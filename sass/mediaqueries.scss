@@ -60,6 +60,10 @@
                 .autor_articulo{
                     width: 100%;
                     padding:3em 2em;
+                    align-items: end;
+                    p{
+                        text-align: start;
+                    }
                 }
             }
         }

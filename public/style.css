@@ -543,6 +543,10 @@ body footer .contacto a img {
   body .index_section div .autor_articulo {
     width: 100%;
     padding: 3em 2em;
+    align-items: end;
+  }
+  body .index_section div .autor_articulo p {
+    text-align: start;
   }
   body .videoteca_index div {
     height: 315px;
