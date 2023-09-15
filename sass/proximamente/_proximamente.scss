@@ -1,9 +1,11 @@
 .body_proximamente{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 100vh;
     overflow-y: hidden;
 
     .proximamente{
-        width: 80%;
         margin: 5em auto;
         padding: 4em;
         display: flex;
@@ -15,6 +17,7 @@
         @include border-radius();
         box-shadow: $shadow;
         text-transform: uppercase;
+        color: rgb(160, 160, 160);
         h2{
             text-align: center;
         }

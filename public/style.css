@@ -104,11 +104,13 @@ h3 {
 }
 
 .body_proximamente {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 100vh;
   overflow-y: hidden;
 }
 .body_proximamente .proximamente {
-  width: 80%;
   margin: 5em auto;
   padding: 4em;
   display: flex;
@@ -120,6 +122,7 @@ h3 {
   border-radius: 15px;
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.176);
   text-transform: uppercase;
+  color: rgb(160, 160, 160);
 }
 .body_proximamente .proximamente h2 {
   text-align: center;
@@ -602,6 +605,14 @@ body footer .contacto a img {
   }
   body .contacto_index {
     width: 100%;
+  }
+  body .proximamente {
+    max-width: 90%;
+    padding: 2em;
+  }
+  body .proximamente img {
+    max-width: 130%;
+    margin-bottom: 3em;
   }
   body .taller_flex {
     gap: 50px;
