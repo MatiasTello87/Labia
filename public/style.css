@@ -103,15 +103,20 @@ h3 {
   background-color: aquamarine;
 }
 
+html {
+  max-width: 100%;
+}
+
 .body_proximamente {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+  max-width: 90%;
   height: 100vh;
   overflow-y: hidden;
 }
 .body_proximamente .proximamente {
-  margin: 5em auto;
   padding: 4em;
   display: flex;
   flex-direction: column;
@@ -122,7 +127,7 @@ h3 {
   border-radius: 15px;
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.176);
   text-transform: uppercase;
-  color: rgb(160, 160, 160);
+  color: rgb(140, 140, 140);
 }
 .body_proximamente .proximamente h2 {
   text-align: center;
