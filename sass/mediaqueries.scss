@@ -10,24 +10,22 @@
             }
         }
         .index_section{
-            h2{
-                font-size: 2em;
+            article{
+                h2{
+                    font-size: 2em;
+                }
             }
-            .autor_articulo{
-                flex-direction: column;
-                align-items: center;
-                width: 400px;
-                text-align: start;
-            }
+            // .autor_articulo{
+            //     flex-direction: column;
+            //     align-items: center;
+            //     width: 400px;
+            //     text-align: start;
+            // }
         }
         .videoteca_index{
-                div{
-                    height: 350px;
-                    
-                } iframe{
+                 iframe{
                     max-width: 100% ;
-                    max-height: 100%;
-                    
+                    max-height: 100%;   
                 }
                 p{
                     width: 70%;
@@ -43,12 +41,8 @@
         // width: 95%;
         .index_section{
             padding: 5em 2em;
-            div{
-                flex-direction: column;
-                gap: 3em;
-                align-items: center;
+            width: 100%;
                 article{
-                    width: 100%;
                     padding: 3em 2em;
                     h2{
                         line-height: 1em;
@@ -57,22 +51,29 @@
                         font-size: 1em;
                     } 
                 }
-                .autor_articulo{
-                    width: 100%;
-                    padding:3em 2em;
-                    align-items: end;
-                    p{
-                        text-align: start;
-                    }
+            }
+            .videoteca_index{
+                article{
+                    padding: 3em 2em;
                 }
             }
-        }
-        .videoteca_index{
-            div{
-
-                height: 315px;
+            .index_ley_danza{
+                width: 100%;
+                article{
+                    padding: 3em 2em;
+                }
+                p{
+                    width: 100%;
+                }
             }
-        }
+                // .autor_articulo{
+                //     width: 100%;
+                //     padding:3em 2em;
+                //     align-items: end;
+                //     p{
+                //         text-align: start;
+                //     }
+                // }
         .contacto_index{
             width: 90%;
             flex-direction: column;
@@ -103,25 +104,29 @@
                 }
             }
         }
-        
     }
 }
 @media screen and (max-width: 576px){
     body{
         .index_section{
             padding: 0;
-            .genero{
-                margin-right: 2em;
-            }
         }
         .videoteca_index{
-            padding: 2em;
-            div{
-                height: 220px;
-            }
+            width: 100%;
+            padding: 0;
             p{
                 width: 100%;
             }
+        }
+        .index_ley_danza{
+            padding: 0;
+            p{
+                width: 100%;
+            }
+        }
+       
+        .contacto_index{
+            width: 100%;
         }
         .aporte_index{
             width: 100%;
@@ -129,9 +134,34 @@
                 width: 80%;
             }
         }
-        .contacto_index{
-            width: 100%;
+        footer{
+            height: 100px;
+            padding: 0;
+            align-items: center;
+            .yo{
+                flex-direction: column-reverse;
+                gap: .5em;
+                .firma{
+                    width: 25px;
+                    height: 25px;
+                }
+            }
+            a{
+                img{
+                    width: 30px;
+                    height: 30px;
+                }
+            }
+            .contacto{
+                gap: .5em;
+                flex-direction: column;
+                div a img{
+                    width: 25px;
+                    height: 25px;
+                }
+            }
         }
+        
         // pages
         // proximamente
         .proximamente{
@@ -172,26 +202,12 @@
         width: 105vw;
     }
     body{
-        .videoteca_index{
-            div{
-                height: 195px;
-            }
-        }
         .aporte_index{
             button{
                 transform: translateX(150px);
             }
         }
-        footer{
-            .contacto{
-                flex-direction: column;
-                gap: 0;
-                div a img{
-                    width: 20px;
-                    height: 20px;
-                }
-            }
-        }
+        
     }
 }
 // @media screen and (max-width: 360px){

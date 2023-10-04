@@ -36,3 +36,17 @@
     border-right: 1px inset $black-dark;
     box-shadow: $shadow;
 }
+// container img autores
+@mixin container_img_autores(){
+    display: flex;
+    justify-content: end;
+    transform: translateX(-20%);
+    margin-bottom: 2em;
+}
+
+// Img autores
+@mixin img_autores (){
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}

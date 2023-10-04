@@ -1,0 +1,161 @@
+@media screen and (max-width: 1200px) {
+  body {
+    width: 90%;
+  }
+  body .inicio {
+    flex-direction: column;
+    padding: 2em;
+    gap: 8em;
+  }
+  body .inicio .description {
+    width: 80%;
+  }
+  body .index_section h2 {
+    font-size: 2em;
+  }
+  body .index_section .autor_articulo {
+    flex-direction: column;
+    align-items: center;
+    width: 400px;
+    text-align: start;
+  }
+  body .videoteca_index div {
+    height: 350px;
+  }
+  body .videoteca_index iframe {
+    max-width: 100%;
+    max-height: 100%;
+  }
+  body .videoteca_index p {
+    width: 70%;
+  }
+  body .contacto_index {
+    width: 70%;
+  }
+}
+@media screen and (max-width: 768px) {
+  body .index_section {
+    padding: 5em 2em;
+  }
+  body .index_section div {
+    flex-direction: column;
+    gap: 3em;
+    align-items: center;
+  }
+  body .index_section div article {
+    width: 100%;
+    padding: 3em 2em;
+  }
+  body .index_section div article h2 {
+    line-height: 1em;
+  }
+  body .index_section div article p {
+    font-size: 1em;
+  }
+  body .index_section div .autor_articulo {
+    width: 100%;
+    padding: 3em 2em;
+    align-items: end;
+  }
+  body .index_section div .autor_articulo p {
+    text-align: start;
+  }
+  body .videoteca_index div {
+    height: 315px;
+  }
+  body .contacto_index {
+    width: 90%;
+    flex-direction: column;
+    gap: 4em;
+  }
+  body .aporte_index button {
+    transform: translateX(350px);
+  }
+  body .taller_flex .taller_flex_items {
+    height: 500px;
+  }
+  body .taller_flex .taller_flex_items .taller_flyers {
+    height: 70%;
+  }
+  body .taller_flex .taller_flex_items .taller_descripcion .taller_tittle {
+    margin-right: 0;
+    text-align: start;
+  }
+  body .taller_flex .taller_flex_items .taller_descripcion .taller_descripcion_p {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 576px) {
+  body .index_section {
+    padding: 0;
+  }
+  body .index_section .genero {
+    margin-right: 2em;
+  }
+  body .videoteca_index {
+    padding: 2em;
+  }
+  body .videoteca_index div {
+    height: 220px;
+  }
+  body .videoteca_index p {
+    width: 100%;
+  }
+  body .aporte_index {
+    width: 100%;
+  }
+  body .aporte_index p {
+    width: 80%;
+  }
+  body .contacto_index {
+    width: 100%;
+  }
+  body .proximamente {
+    max-width: 90%;
+    padding: 2em;
+  }
+  body .proximamente img {
+    max-width: 130%;
+    margin-bottom: 3em;
+  }
+  body .taller_flex {
+    gap: 50px;
+    padding: 0;
+  }
+  body .taller_flex .taller_flex_items {
+    flex-direction: column;
+    height: 950px;
+    padding: 2em;
+  }
+  body .taller_flex .taller_flex_items .taller_flyers {
+    height: 50%;
+  }
+  body .taller_flex .taller_flex_items .taller_descripcion {
+    align-items: start;
+  }
+  body .taller_flex .taller_flex_items .taller_descripcion_p {
+    text-align: start;
+  }
+  body .taller_flex .taller_flex_items_right {
+    flex-direction: column-reverse;
+  }
+}
+@media screen and (max-width: 468px) {
+  html {
+    width: 105vw;
+  }
+  body .videoteca_index div {
+    height: 195px;
+  }
+  body .aporte_index button {
+    transform: translateX(150px);
+  }
+  body footer .contacto {
+    flex-direction: column;
+    gap: 0;
+  }
+  body footer .contacto div a img {
+    width: 20px;
+    height: 20px;
+  }
+}

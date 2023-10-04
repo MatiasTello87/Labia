@@ -1,0 +1,47 @@
+.article_section{
+    flex-direction: column;
+    .article_title{
+        display: flex;
+        justify-content: space-around;
+        gap: 2em;
+        margin: 3em;
+        h1{
+            @include titles();
+        }
+        img{
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+        }
+
+    }
+    .article_article{
+        @include  border();
+        @include corner_right();
+        padding: 2em;
+        div{
+            display: flex;
+            flex-direction: column;
+            gap: 2em;
+            h2:first-of-type{
+                transform: translateY(10px);
+            }
+            h2{
+                line-height: 1em;
+                color: $orange;
+            }
+            h4{
+                color: $blue;
+            }
+        }
+    }
+    a{
+        text-decoration: none;
+        color: $blue;
+        display: flex;
+        justify-content: flex-end;
+        margin: 3em;
+        font-size: $size_medium;
+
+    }
+}
