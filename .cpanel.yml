@@ -1,5 +1,5 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/labiaar/index_html/
-    - /bin/rsync -av public/ $DEPLOYPATH
+    - export DEPLOYPATH=/home/labiaar/public_html/
+    - /bin/rsync -av labia/ $DEPLOYPATH
