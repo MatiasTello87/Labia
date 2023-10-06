@@ -325,7 +325,7 @@ body header nav {
   border-bottom-left-radius: 15px;
   border-bottom-right-radius: 15px;
   border: 1px inset #0a0a0a;
-  background-image: linear-gradient(to right, rgba(15, 15, 15, 0.9333333333), rgba(3, 3, 3, 0.9098039216));
+  background-image: linear-gradient(to right, rgba(15, 15, 15, 0.9333333333), rgba(0, 0, 0, 0.7882352941));
   box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.7);
   transition: all 1s ease-in-out;
 }
@@ -474,6 +474,12 @@ body .videoteca_index .genero .genero_tittle {
   color: #c1c1c1;
   margin-right: 0;
 }
+body .videoteca_index h2 {
+  font-size: 2.5em;
+  color: #5e87b3;
+  line-height: 1em;
+  text-shadow: 2px 1px 10px rgba(15, 15, 15, 0.8431372549);
+}
 body .videoteca_index article {
   display: flex;
   flex-direction: column;
@@ -489,12 +495,6 @@ body .videoteca_index article .foto_luis img {
   width: 80px;
   height: 80px;
   border-radius: 50%;
-}
-body .videoteca_index article h2 {
-  font-size: 2.5em;
-  color: #5e87b3;
-  line-height: 1em;
-  text-shadow: 2px 1px 10px rgba(15, 15, 15, 0.8431372549);
 }
 body .videoteca_index article p {
   width: 90%;
@@ -712,13 +712,6 @@ body footer .contacto a img {
   body .index_section article h2 {
     font-size: 2em;
   }
-  body .videoteca_index iframe {
-    max-width: 100%;
-    max-height: 100%;
-  }
-  body .videoteca_index p {
-    width: 70%;
-  }
   body .contacto_index {
     width: 70%;
   }
@@ -795,10 +788,14 @@ body footer .contacto a img {
   }
   body .videoteca_index {
     width: 100%;
-    padding: 0;
+    padding: 1em;
   }
-  body .videoteca_index p {
+  body .videoteca_index article p {
     width: 100%;
+  }
+  body .videoteca_index article .iframe {
+    height: 185px;
+    margin: 0 auto;
   }
   body .index_ley_danza {
     padding: 0;

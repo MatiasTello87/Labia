@@ -15,22 +15,8 @@
                     font-size: 2em;
                 }
             }
-            // .autor_articulo{
-            //     flex-direction: column;
-            //     align-items: center;
-            //     width: 400px;
-            //     text-align: start;
-            // }
         }
-        .videoteca_index{
-                 iframe{
-                    max-width: 100% ;
-                    max-height: 100%;   
-                }
-                p{
-                    width: 70%;
-                }
-        }
+     
         .contacto_index{
             width: 70%;
         }
@@ -134,12 +120,19 @@
             padding: 0;
         }
         .videoteca_index{
-            width: 100%;
-            padding: 0;
-            p{
-                width: 100%;
+            width: 100% ;
+            padding: 1em;
+            article{
+                p{
+                    width: 100%;
+                }
+                .iframe{
+                   height: 185px;
+                   margin: 0 auto;   
+               }
             }
         }
+        
         .index_ley_danza{
             padding: 0;
             p{

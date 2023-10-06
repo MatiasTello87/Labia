@@ -46,7 +46,7 @@
             transform: translateY(-1px);
             @include corner_bottom();
             @include border ();
-            background-image: linear-gradient(to right , #0f0f0fee , #030303e8);
+            background-image: linear-gradient(to right , #0f0f0fee , #000000c9);
 
             box-shadow: 0 0 0 100vmax rgba(0,0,0,.7);
             transition: all 1s ease-in-out;    

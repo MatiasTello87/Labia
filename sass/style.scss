@@ -130,6 +130,10 @@ body{
         .genero{
             @include solapa();
         }
+        h2{
+            @include titles();
+        }
+    
         article{
             display: flex;
             flex-direction: column;
@@ -139,9 +143,6 @@ body{
                 img{
                     @include img_autores();
                 }
-            }
-            h2{
-                @include titles();
             }
             p{
                 width: 90%;
