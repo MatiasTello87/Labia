@@ -1,5 +1,100 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap");
+.title_pages {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  padding: 2em;
+}
+.title_pages img {
+  width: 40%;
+  height: 40%;
+}
+
+.tarjetas_articles {
+  display: flex;
+}
+.tarjetas_articles .page_articles {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: start;
+  gap: 2em;
+  padding: 3em;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  border-bottom: 1px inset #0a0a0a;
+  border-right: 1px inset #0a0a0a;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.176);
+  padding: 1em;
+  box-shadow: none;
+  border: none;
+}
+.tarjetas_articles .page_articles article {
+  display: flex;
+  flex-direction: column;
+  padding: 2em;
+  gap: 1em;
+  width: 400px;
+  height: 335px;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.176);
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  border: 1px inset #0a0a0a;
+}
+.tarjetas_articles .page_articles article .genero_tarjeta {
+  color: #c1c1c1;
+  font-size: 1em;
+  text-align: start;
+  margin-right: 0;
+  color: #c87a4b;
+}
+.tarjetas_articles .page_articles article .foto_lucas {
+  display: flex;
+  justify-content: end;
+  transform: translateX(-20%);
+  margin-bottom: 2em;
+  margin-bottom: 0;
+}
+.tarjetas_articles .page_articles article .foto_lucas img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+.tarjetas_articles .page_articles article .foto_cande {
+  display: flex;
+  justify-content: end;
+  transform: translateX(-20%);
+  margin-bottom: 2em;
+  margin-bottom: 0;
+}
+.tarjetas_articles .page_articles article .foto_cande img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+.tarjetas_articles .page_articles article h2 {
+  font-size: 2.5em;
+  color: #5e87b3;
+  line-height: 1em;
+  text-shadow: 2px 1px 10px rgba(15, 15, 15, 0.8431372549);
+  font-size: 1.5em;
+}
+.tarjetas_articles .page_articles article h5:first-of-type {
+  transform: translateY(10px);
+}
+.tarjetas_articles .page_articles article a {
+  text-decoration: none;
+  color: #5e87b3;
+  font-size: 1.2em;
+}
+.tarjetas_articles .page_articles article a:hover {
+  font-size: 1.3em;
+}
+
 .article_section {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
   flex-direction: column;
 }
 .article_section .article_title {
@@ -40,6 +135,11 @@
 .article_section .article_article div h4 {
   color: #5e87b3;
 }
+.article_section .article_article div .cita_link {
+  margin: 0;
+  justify-content: start;
+  font-size: 1em;
+}
 .article_section a {
   text-decoration: none;
   color: #5e87b3;
@@ -47,10 +147,6 @@
   justify-content: flex-end;
   margin: 3em;
   font-size: 1.2em;
-}
-
-.article_section .article_article div ul {
-  margin: 1em 3em;
 }
 
 h3 {
@@ -660,6 +756,24 @@ body footer .contacto a img {
   }
   body .aporte_index button {
     transform: translateX(350px);
+  }
+  body .tarjetas_articles {
+    flex-direction: column;
+  }
+  body .article_section {
+    max-width: 100%;
+  }
+  body .article_section .article_title {
+    flex-direction: column;
+    align-items: center;
+  }
+  body .article_section .article_article {
+    padding: 1em;
+    width: 90%;
+  }
+  body .article_section .article_article h2 {
+    font-size: 1em;
+    line-height: 1.5em;
   }
   body .taller_flex .taller_flex_items {
     height: 500px;

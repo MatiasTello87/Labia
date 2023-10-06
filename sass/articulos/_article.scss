@@ -1,0 +1,69 @@
+.title_pages{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    padding: 2em;
+    img{
+        width: 40%;
+        height: 40%;
+    }
+}
+
+.tarjetas_articles{
+    display: flex;
+    .page_articles{
+        @include container_section();
+        padding: 1em;
+        box-shadow: none;
+        border: none;
+        article{
+            display: flex;
+            flex-direction: column;
+            padding: 2em;
+            gap: 1em;
+            width: 400px;
+            height: 335px;
+            box-shadow: $shadow;
+            @include corner_right();
+            @include border();
+            .genero_tarjeta{
+                color: $white;
+                font-size: 1em;
+                text-align: start;
+                margin-right: 0;
+                color: $orange;
+            }
+            .foto_lucas{
+                @include container_img_autores();
+                margin-bottom: 0;
+                img{
+                    @include img_autores();
+                }
+            }
+            .foto_cande{
+                @include container_img_autores();
+                margin-bottom: 0;
+                img{
+                    @include img_autores();
+                }   
+            }
+            h2{
+                @include titles();
+                font-size: 1.5em;
+            }
+
+            h5:first-of-type{
+                transform: translateY(10px);
+            }
+            a{
+                text-decoration: none;
+                color: $blue;
+                font-size: 1.2em;
+                &:hover{
+                    font-size: 1.3em;
+                }
+            }
+        }
+    }    
+}
+

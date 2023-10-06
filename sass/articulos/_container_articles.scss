@@ -1,4 +1,7 @@
 .article_section{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
     flex-direction: column;
     .article_title{
         display: flex;
@@ -32,6 +35,11 @@
             }
             h4{
                 color: $blue;
+            }
+            .cita_link{
+                margin: 0;
+                justify-content: start;
+                font-size: 1em;
             }
         }
     }

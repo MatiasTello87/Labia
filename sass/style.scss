@@ -11,10 +11,15 @@
 // solapa
 @import 'solapa';
 
+
 // pages- articulos
-@import 'articulos/lucas';
+@import 'articulos/article';
+// page- container_article
+@import 'articulos/container_articles';
+// pages- lucas
+@import 'articulos/one_article/lucas';
 // pages- cande
-@import 'articulos/cande';
+@import 'articulos/one_article/cande';
 // pages - taller
 @import 'taller/taller';
 // pages - contacto
