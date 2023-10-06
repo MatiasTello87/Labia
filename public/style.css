@@ -707,7 +707,7 @@ body footer .contacto a img {
     gap: 8em;
   }
   body .inicio .description {
-    width: 80%;
+    width: 90%;
   }
   body .index_section article h2 {
     font-size: 2em;
@@ -783,11 +783,21 @@ body footer .contacto a img {
   }
 }
 @media screen and (max-width: 576px) {
+  body .inicio {
+    width: 100%;
+    padding: 1em;
+  }
+  body .inicio .description {
+    width: 100%;
+  }
   body .index_section {
     padding: 0;
   }
   body .videoteca_index {
     width: 100%;
+    padding: 1em;
+  }
+  body .videoteca_index article {
     padding: 1em;
   }
   body .videoteca_index article p {
@@ -798,9 +808,12 @@ body footer .contacto a img {
     margin: 0 auto;
   }
   body .index_ley_danza {
-    padding: 0;
+    padding: 1em;
   }
-  body .index_ley_danza p {
+  body .index_ley_danza article {
+    padding: 1em;
+  }
+  body .index_ley_danza article p {
     width: 100%;
   }
   body .contacto_index {

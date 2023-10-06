@@ -6,7 +6,7 @@
             padding: 2em;
             gap: 8em;
             .description{
-                width: 80%;
+                width: 90%;
             }
         }
         .index_section{
@@ -116,6 +116,14 @@
 }
 @media screen and (max-width: 576px){
     body{
+        .inicio{
+            width: 100%;
+            padding: 1em;
+            .description{
+                width: 100%;
+                // text-align: center;
+            }
+        }
         .index_section{
             padding: 0;
         }
@@ -123,6 +131,7 @@
             width: 100% ;
             padding: 1em;
             article{
+                padding: 1em;
                 p{
                     width: 100%;
                 }
@@ -134,9 +143,12 @@
         }
         
         .index_ley_danza{
-            padding: 0;
-            p{
-                width: 100%;
+            padding: 1em;
+            article{
+                padding: 1em;
+                p{
+                    width: 100%;
+                }
             }
         }
        
