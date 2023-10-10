@@ -13,6 +13,34 @@
         .contacto_index{
             width: 70%;
         }
+        .yo_section{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-evenly;
+            gap: 3em;
+            .img_yo{
+                width: 80%;
+                flex-direction: column;
+                align-items: center;
+                img{
+                    width: 50%;
+                }
+                div{
+                    p{
+                        text-align: start;
+                    }
+                }
+            }
+            .contacto_yo{
+                width: 60%;
+                border: none;
+                text-align: center;
+            }
+            .colaboracion{
+                width: 50%;
+            }
+        }
     }
 }
 @media screen and (max-width: 768px){
@@ -85,6 +113,12 @@
                 }
             }
 
+        }
+        // page yo
+        .yo_section{
+            .colaboracion{
+                width: 90%;
+            }
         }
 
         // pag talleres
@@ -201,7 +235,20 @@
                 margin-bottom: 3em;
             }
         }
-      
+        // page yo
+        .yo_section{
+            padding: 1em;
+            .img_yo{
+                width: 100%;
+                padding: 1em;
+
+            }
+        }
+        .iconos_skills{
+            width: 70%;
+            flex-wrap: wrap;
+        }
+        
         
         // taller
         .taller_flex{

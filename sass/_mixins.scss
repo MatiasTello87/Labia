@@ -53,13 +53,14 @@
 
 // boton mp
 @mixin btn_mp(){
-        padding: .5em 1em;
-        background-color: #0277a9;
+        padding: .3em .7em;
+        background-color: #2b89b1;
         border-radius: 10px;
         box-shadow: $shadow;
         font-size: 1em;
+        font-weight: 600;
         text-decoration: none;
-        color: white;
+        color: $white;
         &:hover{
             background-color: #009ee3;;
         }

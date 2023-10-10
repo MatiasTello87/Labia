@@ -254,7 +254,7 @@ html {
   grid-template-columns: repeat(4, 1fr);
   grid-auto-rows: minmax(200px);
   row-gap: 1em;
-  column-gap: 3em;
+  column-gap: 2em;
   padding: 1em 3em;
   align-items: center;
 }
@@ -279,7 +279,10 @@ html {
   align-items: center;
   justify-content: end;
   flex-direction: row;
-  gap: 0.5em;
+  color: #469d80;
+}
+.yo_section .img_yo div .icons_yo:first-of-type {
+  transform: translateY(10px);
 }
 .yo_section .img_yo h1 {
   color: #469d80;
@@ -301,8 +304,9 @@ html {
   align-items: start;
   gap: 0.5em;
 }
-.yo_section .contacto_yo .invitacion h2 {
+.yo_section .contacto_yo .invitacion p {
   color: #469d80;
+  font-size: 1.3em;
 }
 .yo_section .colaboracion {
   grid-column: 3/5;
@@ -312,6 +316,7 @@ html {
   align-items: center;
   padding: 1em;
   gap: 1em;
+  border-radius: 15px;
   border: 1px inset #0a0a0a;
 }
 .yo_section .colaboracion div h4 {
@@ -324,13 +329,14 @@ html {
   color: grey;
 }
 .yo_section .colaboracion div a {
-  padding: 0.5em 1em;
-  background-color: #0277a9;
+  padding: 0.3em 0.7em;
+  background-color: #2b89b1;
   border-radius: 10px;
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.176);
   font-size: 1em;
+  font-weight: 600;
   text-decoration: none;
-  color: white;
+  color: #c1c1c1;
 }
 .yo_section .colaboracion div a:hover {
   background-color: #009ee3;
@@ -339,8 +345,9 @@ html {
   justify-self: start;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   gap: 1em;
-  padding: 0 1em;
+  padding: 1em;
   grid-column: 3/5;
   grid-row: 3/4;
   border: 1px inset #0a0a0a;
@@ -351,6 +358,7 @@ html {
 }
 .yo_section .iconos_skills div {
   display: flex;
+  flex-wrap: wrap;
   gap: 1em;
 }
 .yo_section .iconos_skills div img {
@@ -811,13 +819,14 @@ body .aporte_index p {
   text-align: center;
 }
 body .aporte_index .btn_mp {
-  padding: 0.5em 1em;
-  background-color: #0277a9;
+  padding: 0.3em 0.7em;
+  background-color: #2b89b1;
   border-radius: 10px;
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.176);
   font-size: 1em;
+  font-weight: 600;
   text-decoration: none;
-  color: white;
+  color: #c1c1c1;
 }
 body .aporte_index .btn_mp:hover {
   background-color: #009ee3;
@@ -836,7 +845,6 @@ body footer {
   justify-content: space-between;
   align-items: start;
   justify-items: center;
-  margin-top: 7em;
   padding: 1em;
   color: #c87a4b;
   border: 1px inset #0a0a0a;
@@ -891,6 +899,32 @@ body footer .contacto a img {
   body .contacto_index {
     width: 70%;
   }
+  body .yo_section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 3em;
+  }
+  body .yo_section .img_yo {
+    width: 80%;
+    flex-direction: column;
+    align-items: center;
+  }
+  body .yo_section .img_yo img {
+    width: 50%;
+  }
+  body .yo_section .img_yo div p {
+    text-align: start;
+  }
+  body .yo_section .contacto_yo {
+    width: 60%;
+    border: none;
+    text-align: center;
+  }
+  body .yo_section .colaboracion {
+    width: 50%;
+  }
 }
 @media screen and (max-width: 768px) {
   body .index_section {
@@ -943,6 +977,9 @@ body footer .contacto a img {
   body .article_section .article_article h2 {
     font-size: 1em;
     line-height: 1.5em;
+  }
+  body .yo_section .colaboracion {
+    width: 90%;
   }
   body .taller_flex .taller_flex_items {
     height: 500px;
@@ -1040,6 +1077,17 @@ body footer .contacto a img {
   body .proximamente img {
     max-width: 130%;
     margin-bottom: 3em;
+  }
+  body .yo_section {
+    padding: 1em;
+  }
+  body .yo_section .img_yo {
+    width: 100%;
+    padding: 1em;
+  }
+  body .iconos_skills {
+    width: 70%;
+    flex-wrap: wrap;
   }
   body .taller_flex {
     gap: 50px;
