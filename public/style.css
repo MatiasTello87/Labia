@@ -719,16 +719,37 @@ body .index_laura article {
   padding: 2em;
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.176);
 }
-body .index_laura article .foto_cande {
+body .index_laura article .foto_laura {
   display: flex;
   justify-content: end;
   transform: translateX(-25%);
   margin-bottom: 2em;
 }
-body .index_laura article .foto_cande img {
+body .index_laura article .foto_laura img {
   width: 80px;
   height: 80px;
   border-radius: 50%;
+}
+body .index_laura article h2 {
+  font-size: 2.5em;
+  color: #5e87b3;
+  line-height: 1em;
+  text-shadow: 2px 1px 10px rgba(15, 15, 15, 0.8431372549);
+}
+body .index_laura article p {
+  color: grey;
+}
+body .index_laura article h5 {
+  color: salmon;
+}
+body .index_laura article .iframe {
+  width: 100%;
+  height: 500px;
+  transform: translate(0);
+}
+body .index_laura article .iframe iframe {
+  width: 100%;
+  height: 100%;
 }
 body .contacto_index {
   display: flex;
@@ -970,6 +991,13 @@ body footer .contacto a img {
   }
   body .index_ley_danza article p {
     width: 100%;
+  }
+  body .index_laura {
+    padding: 0;
+  }
+  body .index_laura article .iframe {
+    height: 185px;
+    margin: 0 auto;
   }
   body .contacto_index {
     width: 100%;
