@@ -1131,6 +1131,9 @@ body footer .contacto a img {
   body .iconos_skills div {
     justify-content: space-evenly;
   }
+  body .colaboracion div p {
+    width: 100%;
+  }
   body .taller_flex {
     gap: 50px;
     padding: 0;
