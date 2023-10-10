@@ -526,7 +526,7 @@ body .index_section .genero {
 }
 body .index_section .genero .genero_tittle {
   font-size: 1.1em;
-  color: #469d80;
+  color: rgba(190, 190, 190, 0.7882352941);
   margin-right: 0;
   text-shadow: 5px 3px 5px #0a0a0a;
 }
@@ -586,7 +586,7 @@ body .videoteca_index .genero {
 }
 body .videoteca_index .genero .genero_tittle {
   font-size: 1.1em;
-  color: #469d80;
+  color: rgba(190, 190, 190, 0.7882352941);
   margin-right: 0;
   text-shadow: 5px 3px 5px #0a0a0a;
 }
@@ -645,7 +645,7 @@ body .index_ley_danza .genero {
 }
 body .index_ley_danza .genero .genero_tittle {
   font-size: 1.1em;
-  color: #469d80;
+  color: rgba(190, 190, 190, 0.7882352941);
   margin-right: 0;
   text-shadow: 5px 3px 5px #0a0a0a;
 }
@@ -706,7 +706,7 @@ body .index_laura .genero {
 }
 body .index_laura .genero .genero_tittle {
   font-size: 1.1em;
-  color: #469d80;
+  color: rgba(190, 190, 190, 0.7882352941);
   margin-right: 0;
   text-shadow: 5px 3px 5px #0a0a0a;
 }
