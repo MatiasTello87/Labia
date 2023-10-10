@@ -1124,14 +1124,14 @@ body footer .contacto a img {
     width: 100%;
     padding: 1em;
   }
-  body .iconos_skills {
+  body .yo_section .iconos_skills {
     width: 50%;
     flex-wrap: wrap;
   }
-  body .iconos_skills div {
+  body .yo_section .iconos_skills div {
     justify-content: space-evenly;
   }
-  body .colaboracion div p {
+  body .yo_section .colaboracion div p {
     width: 100%;
   }
   body .taller_flex {
