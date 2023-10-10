@@ -40,7 +40,7 @@
 @mixin container_img_autores(){
     display: flex;
     justify-content: end;
-    transform: translateX(-20%);
+    transform: translateX(-25%);
     margin-bottom: 2em;
 }
 
@@ -49,4 +49,18 @@
     width: 80px;
     height: 80px;
     border-radius: 50%;
+}
+
+// boton mp
+@mixin btn_mp(){
+        padding: .5em 1em;
+        background-color: #0277a9;
+        border-radius: 10px;
+        box-shadow: $shadow;
+        font-size: 1em;
+        text-decoration: none;
+        color: white;
+        &:hover{
+            background-color: #009ee3;;
+        }
 }

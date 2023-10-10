@@ -28,6 +28,8 @@
 @import 'agenda/agenda';
 // page - proximamente
 @import 'proximamente/proximamente';
+// page - yo
+@import 'yo/yo.scss';
 
 
 *{
@@ -195,6 +197,25 @@ body{
 
             }
         }
+        .index_laura{
+            @include container_section();
+            .genero{
+                @include solapa();
+            }
+            article{
+                display: flex;
+                flex-direction: column;
+                gap: 2em;
+                padding: 2em;
+                box-shadow: $shadow;
+                .foto_cande{
+                    @include container_img_autores();
+                    img{
+                        @include img_autores();
+                    }
+                }
+            }
+        }
         .contacto_index{
             @include container_section();
             width: 50%;
@@ -230,17 +251,8 @@ body{
                     width: 70%;
                     text-align: center;
                 }
-                 a{
-                    padding: .5em 1em;
-                    background-color: #0277a9;
-                    border-radius: 10px;
-                    box-shadow: $shadow;
-                    font-size: 1em;
-                    text-decoration: none;
-                    color: white;
-                    &:hover{
-                        background-color: #009ee3;;
-                    }
+                 .btn_mp{
+                    @include btn_mp();
                 }
                 h2{
                     @include titles();
