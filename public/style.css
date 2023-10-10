@@ -533,6 +533,17 @@ body .section_david .dia h2 {
 body .section_david .dia p {
   width: 50%;
 }
+body .section_david .dia .ig_autores {
+  display: flex;
+  align-items: flex-start;
+  justify-content: start;
+}
+body .section_david .dia .ig_autores h6 {
+  color: #469d80;
+}
+body .section_david .dia .ig_autores a img {
+  width: 80%;
+}
 body .index_section {
   display: flex;
   flex-direction: column;
@@ -595,6 +606,17 @@ body .index_section article a {
 body .index_section article a:hover {
   font-size: 1.3em;
 }
+body .index_section article .ig_autores {
+  display: flex;
+  align-items: flex-start;
+  justify-content: start;
+}
+body .index_section article .ig_autores h6 {
+  color: #469d80;
+}
+body .index_section article .ig_autores a img {
+  width: 80%;
+}
 body .videoteca_index {
   display: flex;
   flex-direction: column;
@@ -644,6 +666,17 @@ body .videoteca_index article .foto_luis img {
 }
 body .videoteca_index article p {
   width: 90%;
+}
+body .videoteca_index article .ig_autores {
+  display: flex;
+  align-items: flex-start;
+  justify-content: start;
+}
+body .videoteca_index article .ig_autores h6 {
+  color: #469d80;
+}
+body .videoteca_index article .ig_autores a img {
+  width: 80%;
 }
 body .videoteca_index article .iframe {
   width: 100%;
@@ -716,6 +749,17 @@ body .index_ley_danza article a {
 body .index_ley_danza article a:hover {
   font-size: 1.3em;
 }
+body .index_ley_danza article .ig_autores {
+  display: flex;
+  align-items: flex-start;
+  justify-content: start;
+}
+body .index_ley_danza article .ig_autores h6 {
+  color: #469d80;
+}
+body .index_ley_danza article .ig_autores a img {
+  width: 80%;
+}
 body .index_laura {
   display: flex;
   flex-direction: column;
@@ -769,6 +813,17 @@ body .index_laura article p {
 }
 body .index_laura article h5 {
   width: 30%;
+}
+body .index_laura article .ig_autores {
+  display: flex;
+  align-items: flex-start;
+  justify-content: start;
+}
+body .index_laura article .ig_autores h6 {
+  color: #469d80;
+}
+body .index_laura article .ig_autores a img {
+  width: 80%;
 }
 body .index_laura article .iframe {
   width: 100%;

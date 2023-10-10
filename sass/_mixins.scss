@@ -66,3 +66,18 @@
             background-color: #009ee3;;
         }
 }
+
+// botón de ig autores
+@mixin ig_autores(){
+        display: flex;
+        align-items: flex-start;
+        justify-content: start;
+        h6{
+            color: $verde_agua;
+        }
+        a{
+            img{
+                width: 80%;
+            }
+        }
+}
