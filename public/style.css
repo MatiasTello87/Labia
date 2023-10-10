@@ -336,6 +336,7 @@ html {
   font-size: 1em;
   font-weight: 600;
   text-decoration: none;
+  text-shadow: 3px 1px 3px #0a0a0a;
   color: #c1c1c1;
 }
 .yo_section .colaboracion div a:hover {
@@ -521,16 +522,13 @@ body .index_section {
 body .index_section .genero {
   display: block;
   padding: 0.5em 0.7em;
-  border-top-left-radius: 15px;
-  border-top-right-radius: 15px;
-  border: 1px inset #0a0a0a;
-  border: 1px inset #5e87b3;
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.176);
 }
 body .index_section .genero .genero_tittle {
   font-size: 1.1em;
-  color: rgba(190, 190, 190, 0.7882352941);
+  color: #469d80;
   margin-right: 0;
+  text-shadow: 5px 3px 5px #0a0a0a;
 }
 body .index_section article {
   display: flex;
@@ -584,16 +582,13 @@ body .videoteca_index {
 body .videoteca_index .genero {
   display: block;
   padding: 0.5em 0.7em;
-  border-top-left-radius: 15px;
-  border-top-right-radius: 15px;
-  border: 1px inset #0a0a0a;
-  border: 1px inset #5e87b3;
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.176);
 }
 body .videoteca_index .genero .genero_tittle {
   font-size: 1.1em;
-  color: rgba(190, 190, 190, 0.7882352941);
+  color: #469d80;
   margin-right: 0;
+  text-shadow: 5px 3px 5px #0a0a0a;
 }
 body .videoteca_index h2 {
   font-size: 2.5em;
@@ -646,16 +641,13 @@ body .index_ley_danza {
 body .index_ley_danza .genero {
   display: block;
   padding: 0.5em 0.7em;
-  border-top-left-radius: 15px;
-  border-top-right-radius: 15px;
-  border: 1px inset #0a0a0a;
-  border: 1px inset #5e87b3;
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.176);
 }
 body .index_ley_danza .genero .genero_tittle {
   font-size: 1.1em;
-  color: rgba(190, 190, 190, 0.7882352941);
+  color: #469d80;
   margin-right: 0;
+  text-shadow: 5px 3px 5px #0a0a0a;
 }
 body .index_ley_danza article {
   display: flex;
@@ -710,16 +702,13 @@ body .index_laura {
 body .index_laura .genero {
   display: block;
   padding: 0.5em 0.7em;
-  border-top-left-radius: 15px;
-  border-top-right-radius: 15px;
-  border: 1px inset #0a0a0a;
-  border: 1px inset #5e87b3;
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.176);
 }
 body .index_laura .genero .genero_tittle {
   font-size: 1.1em;
-  color: rgba(190, 190, 190, 0.7882352941);
+  color: #469d80;
   margin-right: 0;
+  text-shadow: 5px 3px 5px #0a0a0a;
 }
 body .index_laura article {
   display: flex;
@@ -827,6 +816,7 @@ body .aporte_index .btn_mp {
   font-size: 1em;
   font-weight: 600;
   text-decoration: none;
+  text-shadow: 3px 1px 3px #0a0a0a;
   color: #c1c1c1;
 }
 body .aporte_index .btn_mp:hover {
