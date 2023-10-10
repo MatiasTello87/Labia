@@ -346,6 +346,7 @@ html {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   gap: 1em;
   padding: 1em;
   grid-column: 3/5;
@@ -909,7 +910,7 @@ body footer .contacto a img {
   body .yo_section .img_yo {
     width: 80%;
     flex-direction: column;
-    align-items: center;
+    align-items: start;
   }
   body .yo_section .img_yo img {
     width: 50%;
@@ -1086,8 +1087,11 @@ body footer .contacto a img {
     padding: 1em;
   }
   body .iconos_skills {
-    width: 70%;
+    width: 50%;
     flex-wrap: wrap;
+  }
+  body .iconos_skills div {
+    justify-content: space-evenly;
   }
   body .taller_flex {
     gap: 50px;
