@@ -46,6 +46,14 @@
 @media screen and (max-width: 768px){
     body{
         // width: 95%;
+        // // Dia Nacional de la Danza
+        .section_david{
+            .dia{
+                p{
+                    width: 100%;
+                }
+            }
+        }
         .index_section{
             padding: 5em 2em;
             width: 100%;
@@ -151,6 +159,16 @@
                 // text-align: center;
             }
         }
+        // Dia Nacional de la Danza
+        .section_david{
+            flex-direction: column;
+            .dia{
+                width: 100%;
+                h2{
+                    width: 100%;
+                }
+            }
+        }
         .index_section{
             padding: 0;
         }
@@ -181,6 +199,15 @@
         .index_laura{
             padding: 0;
             article{
+                // h2{
+                //     width: 100%;
+                // }
+                p{
+                    width: 100%;
+                }
+                h5{
+                    width: 50%;
+                }
                 .iframe{
                     height: 185px;
                     margin: 0 auto;   

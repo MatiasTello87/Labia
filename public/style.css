@@ -494,14 +494,44 @@ body .inicio {
   border-bottom: 1px inset #0a0a0a;
   border-right: 1px inset #0a0a0a;
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.176);
+  gap: 10em;
   flex-direction: row;
   align-items: center;
   padding: 5em 3em;
   border-right: none;
 }
 body .inicio .description {
-  width: 50%;
+  width: 70%;
   font-size: 1.3em;
+}
+body .section_david {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5em;
+  padding: 3em;
+}
+body .section_david .iframe {
+  width: 50%;
+  display: flex;
+  justify-content: end;
+}
+body .section_david .dia {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: start;
+  gap: 2em;
+}
+body .section_david .dia h2 {
+  font-size: 2.5em;
+  color: #5e87b3;
+  line-height: 1em;
+  text-shadow: 2px 1px 10px rgba(15, 15, 15, 0.8431372549);
+}
+body .section_david .dia p {
+  width: 50%;
 }
 body .index_section {
   display: flex;
@@ -735,10 +765,10 @@ body .index_laura article h2 {
   text-shadow: 2px 1px 10px rgba(15, 15, 15, 0.8431372549);
 }
 body .index_laura article p {
-  color: grey;
+  width: 70%;
 }
 body .index_laura article h5 {
-  color: salmon;
+  width: 30%;
 }
 body .index_laura article .iframe {
   width: 100%;
@@ -918,6 +948,9 @@ body footer .contacto a img {
   }
 }
 @media screen and (max-width: 768px) {
+  body .section_david .dia p {
+    width: 100%;
+  }
   body .index_section {
     padding: 5em 2em;
     width: 100%;
@@ -994,6 +1027,15 @@ body footer .contacto a img {
   body .inicio .description {
     width: 100%;
   }
+  body .section_david {
+    flex-direction: column;
+  }
+  body .section_david .dia {
+    width: 100%;
+  }
+  body .section_david .dia h2 {
+    width: 100%;
+  }
   body .index_section {
     padding: 0;
   }
@@ -1022,6 +1064,12 @@ body footer .contacto a img {
   }
   body .index_laura {
     padding: 0;
+  }
+  body .index_laura article p {
+    width: 100%;
+  }
+  body .index_laura article h5 {
+    width: 50%;
   }
   body .index_laura article .iframe {
     height: 185px;

@@ -63,15 +63,45 @@ body{
     }
     .inicio{
         @include container_section();
+        gap: 10em;
         flex-direction: row;
         align-items: center;
         padding: 5em 3em;
         border-right: none;
         .description{
-            width: 50%;
+            width: 70%;
             font-size: 1.3em;
         }
     }
+    // Dia Nacional de la Danza
+    .section_david{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 5em;
+        padding: 3em;
+        .iframe{
+            width: 50%;
+            display: flex;
+            justify-content: end;
+        }
+        .dia{
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: start;
+            gap: 2em;
+            h2{
+                @include titles();
+            }
+            p{
+                width: 50%;
+            }
+        }
+
+    }
+    // Articulo lucas
     .index_section{
         @include container_section();
         width: 80%;
@@ -218,10 +248,10 @@ body{
                     @include titles();
                 }
                 p{
-                    color: grey;
+                    width: 70%;
                 }
                 h5{
-                    color: salmon;
+                    width: 30%;
                 }
                 .iframe{
                     width: 100%;
