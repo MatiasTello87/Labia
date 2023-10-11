@@ -3,7 +3,7 @@
     grid-template-columns: repeat(4, 1fr);
     grid-auto-rows: minmax(200px);
     row-gap: 1em;
-    column-gap: 2em;
+    column-gap: 1em;
     padding: 1em 3em;
     align-items: center;
     .img_yo{
@@ -13,13 +13,16 @@
         grid-column: 1/3;
         grid-row: 1/4;
         display: flex;
-        gap: 3em;
+        gap: 2em;
         div{
            display: flex;
            flex-direction: column;
            gap: .5em;
+           img{
+            max-width: 200px;
+           }
            p{
-               text-align: end;
+               text-align: start;
            }
            .icons_yo{
                 align-items: center;

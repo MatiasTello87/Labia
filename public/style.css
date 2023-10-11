@@ -254,7 +254,7 @@ html {
   grid-template-columns: repeat(4, 1fr);
   grid-auto-rows: minmax(200px);
   row-gap: 1em;
-  column-gap: 2em;
+  column-gap: 1em;
   padding: 1em 3em;
   align-items: center;
 }
@@ -265,15 +265,18 @@ html {
   grid-column: 1/3;
   grid-row: 1/4;
   display: flex;
-  gap: 3em;
+  gap: 2em;
 }
 .yo_section .img_yo div {
   display: flex;
   flex-direction: column;
   gap: 0.5em;
 }
+.yo_section .img_yo div img {
+  max-width: 200px;
+}
 .yo_section .img_yo div p {
-  text-align: end;
+  text-align: start;
 }
 .yo_section .img_yo div .icons_yo {
   align-items: center;
@@ -992,6 +995,7 @@ body footer .contacto a img {
   }
   body .yo_section .img_yo div p {
     text-align: start;
+    width: 80%;
   }
   body .yo_section .contacto_yo {
     width: 60%;
