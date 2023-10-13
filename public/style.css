@@ -541,11 +541,16 @@ body .section_david .dia .ig_autores {
   align-items: flex-start;
   justify-content: start;
 }
-body .section_david .dia .ig_autores h6 {
-  color: #469d80;
+body .section_david .dia .ig_autores a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
 }
 body .section_david .dia .ig_autores a img {
   width: 80%;
+}
+body .section_david .dia .ig_autores a h6 {
+  color: #469d80;
 }
 body .index_section {
   display: flex;
@@ -614,11 +619,16 @@ body .index_section article .ig_autores {
   align-items: flex-start;
   justify-content: start;
 }
-body .index_section article .ig_autores h6 {
-  color: #469d80;
+body .index_section article .ig_autores a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
 }
 body .index_section article .ig_autores a img {
   width: 80%;
+}
+body .index_section article .ig_autores a h6 {
+  color: #469d80;
 }
 body .videoteca_index {
   display: flex;
@@ -675,11 +685,16 @@ body .videoteca_index article .ig_autores {
   align-items: flex-start;
   justify-content: start;
 }
-body .videoteca_index article .ig_autores h6 {
-  color: #469d80;
+body .videoteca_index article .ig_autores a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
 }
 body .videoteca_index article .ig_autores a img {
   width: 80%;
+}
+body .videoteca_index article .ig_autores a h6 {
+  color: #469d80;
 }
 body .videoteca_index article .iframe {
   width: 100%;
@@ -757,11 +772,16 @@ body .index_ley_danza article .ig_autores {
   align-items: flex-start;
   justify-content: start;
 }
-body .index_ley_danza article .ig_autores h6 {
-  color: #469d80;
+body .index_ley_danza article .ig_autores a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
 }
 body .index_ley_danza article .ig_autores a img {
   width: 80%;
+}
+body .index_ley_danza article .ig_autores a h6 {
+  color: #469d80;
 }
 body .index_laura {
   display: flex;
@@ -822,11 +842,16 @@ body .index_laura article .ig_autores {
   align-items: flex-start;
   justify-content: start;
 }
-body .index_laura article .ig_autores h6 {
-  color: #469d80;
+body .index_laura article .ig_autores a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
 }
 body .index_laura article .ig_autores a img {
   width: 80%;
+}
+body .index_laura article .ig_autores a h6 {
+  color: #469d80;
 }
 body .index_laura article .iframe {
   width: 100%;
