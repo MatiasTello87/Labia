@@ -13,3 +13,12 @@ x.addEventListener('click',()=>{
 
 })
 
+// // Lightmode
+// const btn_lightmode = document.querySelector('.btn_lightmode');
+// const body = document.querySelector('#body');
+
+// btn_lightmode.addEventListener('click',()=>{
+//     console.log("click")
+//     body.classList.add('lightmode');
+// } )
+

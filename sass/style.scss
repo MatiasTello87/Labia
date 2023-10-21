@@ -10,6 +10,8 @@
 @import 'footer';
 // solapa
 @import 'solapa';
+// lightmode
+@import 'lightmode';
 
 
 // pages- articulos
@@ -54,12 +56,24 @@ body{
     color: $white;
     box-shadow: $shadow;
     overflow-x: hidden;
-    .light_mode{
-        background-color: $white;
-        color: $black-dark;
-    }
+    position: relative;
     header{
         @include header();
+    }
+    .darkmode{
+        position: absolute;
+        right: 3%;
+        top: 125px;
+        opacity: .5;
+        cursor: pointer;
+        button{
+            background-color: transparent;
+            padding: .5em;
+            border-radius: 50%;
+            img{
+                background-color: transparent;
+            }
+        }
     }
     .inicio{
         @include container_section();
