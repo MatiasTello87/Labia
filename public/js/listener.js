@@ -35,7 +35,7 @@ btn_switch.addEventListener('click', ()=>{
     btn_switch.classList.toggle('active')
     if(body.classList.contains('light')){
         console.log("funca");
-        logo.src = "./public/img/lightmode/logo-light.png"
+        logo.src = "../img/lightmode/logo-light.png"
         logo_footer.src = "./public/img/lightmode/logo-light.png"
         firma.src= "./public/img/lightmode/firma_light.png"
         hamburguer.src = "/public/img/lightmode/hamburguer_light.png"
