@@ -19,14 +19,26 @@
             @include border();
             cursor: pointer;
         }
+        div{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            gap: 2em;
+            transition: all 3s;
+            .btn_switch{
+                @include btn_switch ();
+            }
             .hamburguer{
-                width: 95%;
+                width: 30%;
                 opacity: .7;
                 cursor: pointer;
                 &:hover{
-                    transform: translateY(-1px);
+                    transform:translateY(-1px);
                 }
             }
+
+        }
             nav{
                 opacity: 0;
                 visibility: hidden;
@@ -34,8 +46,8 @@
                 top: 0;
                 right: 0;
     
-                width: 240px;
-                height: 300px;
+                width: 200px;
+                height: 270px;
                 padding: 2em;
                 display: flex;
                 flex-direction: column;
@@ -76,7 +88,7 @@
                     }
                     .home{
                         border: none;
-                        opacity: .5;
+                        opacity: .7;
                     }
                 }
             }

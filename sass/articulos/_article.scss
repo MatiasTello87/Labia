@@ -31,7 +31,7 @@
                 font-size: 1em;
                 text-align: start;
                 margin-right: 0;
-                color: $orange;
+                color: $violeta-oscuro;
             }
             .foto_lucas{
                 @include container_img_autores();
@@ -51,17 +51,10 @@
                 @include titles();
                 font-size: 1.5em;
             }
-
-            h5:first-of-type{
-                transform: translateY(10px);
-            }
             a{
                 text-decoration: none;
-                color: $blue;
+                color: $violeta-oscuro;
                 font-size: 1.2em;
-                &:hover{
-                    font-size: 1.3em;
-                }
             }
         }
     }    

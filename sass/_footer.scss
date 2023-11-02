@@ -7,7 +7,7 @@
     align-items: start;
     justify-items: center;
     padding: 1em;
-    color: $orange;
+    color: $violeta-oscuro;
     @include border();
     @include corner_top();
     box-shadow: $shadow;
@@ -22,7 +22,7 @@
             border-radius: 50%;
             @include border();
             cursor: pointer;
-            box-shadow: $shadow;
+            // box-shadow: $shadow;
         }
     }
     a{

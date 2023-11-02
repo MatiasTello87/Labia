@@ -60,6 +60,7 @@
             width: 100%;
                 article{
                     padding: 3em 2em;
+                    max-width: 100%;
                     h2{
                         line-height: 1em;
                     }
@@ -317,6 +318,13 @@
         width: 105vw;
     }
     body{
+        .index_section{
+            article{
+                h2{
+                    font-size: 2em;
+                }
+            }
+        }
         .aporte_index{
             button{
                 transform: translateX(150px);

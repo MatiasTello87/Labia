@@ -10,8 +10,8 @@
 @import 'footer';
 // solapa
 @import 'solapa';
-// lightmode
-@import 'lightmode';
+// darkmode
+@import 'btn_switch';
 
 
 // pages- articulos
@@ -40,8 +40,6 @@
     box-sizing: border-box;
     font-family: 'Lato';
 }
-
-
 body{
     display: flex;
     flex-direction: column;
@@ -57,23 +55,41 @@ body{
     box-shadow: $shadow;
     overflow-x: hidden;
     position: relative;
-    header{
-        @include header();
+    transition: all 3s ease;
+    h2{
+        color: $blue;
     }
-    .darkmode{
-        position: absolute;
-        right: 3%;
-        top: 125px;
-        opacity: .5;
-        cursor: pointer;
-        button{
-            background-color: transparent;
-            padding: .5em;
-            border-radius: 50%;
-            img{
-                background-color: transparent;
+    &.light{
+        background-image: linear-gradient(to right , $white_gray , $white);
+        color: $black-dark;
+        h2{
+            color: $colorado;
+        }
+        .name_autor{
+            color: $violeta-oscuro;
+        }
+        nav{
+            background-image: linear-gradient(to right , $white_gray , $white);
+            li a{
+                color: $black-dark;
             }
         }
+        // .name_ig{
+        //     color: $violeta-oscuro;
+        // }
+        footer{
+            .yo{
+                color: $violeta-oscuro;
+            }
+            .contacto{
+                color: $violeta-oscuro;
+            }
+        }
+        
+    }
+   
+    header{
+        @include header();
     }
     .inicio{
         @include container_section();
@@ -98,7 +114,6 @@ body{
             width: 50%;
             display: flex;
             justify-content: end;
-            
         }
         .dia{
             width: 50%;
@@ -107,7 +122,7 @@ body{
             justify-content: space-evenly;
             align-items: start;
             gap: 2em;
-            h2{
+            .title{
                 @include titles();
             }
             p{
@@ -119,24 +134,20 @@ body{
         }
 
     }
-    // Articulo lucas
-    .index_section{
+    // Articulo Cande
+    .index_ley_danza{
         @include container_section();
-        width: 80%;
-        box-shadow: none;
-        border: none;
+        width: 60%;
         .genero{
             @include solapa();
         }
         article{
             display: flex;
             flex-direction: column;
+            gap: 2em;
             padding: 2em;
-            gap: 1em;
             box-shadow: $shadow;
-            @include corner_right();
-            @include border();
-            .foto_lucas{
+            .foto_cande{
                 @include container_img_autores();
                 img{
                     @include img_autores();
@@ -144,39 +155,21 @@ body{
             }
             h2{
                 @include titles();
+                font-size: 2.5em;
+                width: 90%;
             }
-            a{
-                text-decoration: none;
-                color: $blue;
-                font-size: 1.2em;
-                &:hover{
-                    font-size: 1.3em;
-                }
+            p{
+                width: 90%;
+            }
+            .leer{
+               @include leer();
             }
             .ig_autores{
                 @include ig_autores();
             }
         }
-            
-            // .autor_articulo{
-            //     height: 40%;
-            //     width: 40%;
-            //     padding: 2em;
-            //     display: flex;
-            //     justify-content: space-between;
-            //     align-items: start;
-            //     gap: 2em;
-            //     box-shadow: $shadow;
-            //     @include corner_left();
-            //     @include border();
-            //     text-align: end;
-            //     img{
-            //         width: 80px;
-            //         height: 80px;
-            //         border-radius: 50%;
-            //     }
-            // }
-        }
+    }
+
     .videoteca_index{
         @include container_section();
         border: none;
@@ -214,86 +207,83 @@ body{
             }     
         }
     }
-        .index_ley_danza{
-            @include container_section();
-            width: 60%;
-            .genero{
-                @include solapa();
-            }
-            article{
-                display: flex;
-                flex-direction: column;
-                gap: 2em;
-                padding: 2em;
-                box-shadow: $shadow;
-                .foto_cande{
-                    @include container_img_autores();
-                    img{
-                        @include img_autores();
-                    }
-                }
-                h2{
-                    @include titles();
-                    font-size: 2.5em;
-                    width: 90%;
-                }
-                p{
-                    width: 90%;
-                }
-                a{
-                    text-decoration: none;
-                    color: $blue;
-                    font-size: 1.2em;
-                    &:hover{
-                        font-size: 1.3em;
-                    }
-                }
-                .ig_autores{
-                    @include ig_autores();
-                }
 
+    // Articulo lucas
+    .index_section{
+        @include container_section();
+        width: 80%;
+        box-shadow: none;
+        border: none;
+        .genero{
+            @include solapa();
+        }
+        article{
+            display: flex;
+            flex-direction: column;
+            padding: 2em;
+            gap: 1em;
+            box-shadow: $shadow;
+            @include corner_right();
+            @include border();
+            .foto_lucas{
+                @include container_img_autores();
+                img{
+                    @include img_autores ();
+                }
+            }
+            h2{
+                @include titles();
+            }
+            .leer{
+                @include leer();
+            }
+            .ig_autores{
+                @include ig_autores();
             }
         }
-        .index_laura{
-            @include container_section();
-            .genero{
-                @include solapa();
-            }
-            article{
-                display: flex;
-                flex-direction: column;
-                gap: 2em;
-                padding: 2em;
-                box-shadow: $shadow;
-                .foto_laura{
-                    @include container_img_autores();
+    }
+// Laura
+       
+    .index_laura{
+        @include container_section();
+        .genero{
+             @include solapa();
+        }
+        article{
+            display: flex;
+            flex-direction: column;
+            gap: 2em;
+            padding: 2em;
+            box-shadow: $shadow;
+            .foto_laura{
+                @include container_img_autores();
                     img{
                         @include img_autores();
                     }
-                }
-                h2{
-                    @include titles();
-                }
-                p{
-                    width: 70%;
-                }
-                h5{
-                    width: 30%;
-                }
-                .ig_autores{
-                    @include ig_autores();
-                }
-                .iframe{
+            }
+            h2{
+                @include titles();
+            }
+            p{
+                width: 70%;
+            }
+            h5{
+                width: 30%;
+            }
+            .ig_autores{
+                @include ig_autores();
+            }
+            .iframe{
+                width: 100%;
+                height: 500px;
+                transform: translate(0);
+                iframe{
                     width: 100%;
-                    height: 500px;
-                    transform: translate(0);
-                    iframe{
-                        width: 100%;
-                        height: 100%;
-                    }
+                    height: 100%;
                 }
             }
         }
+    }
         .contacto_index{
             @include container_section();
             width: 50%;

@@ -39,9 +39,17 @@
 // container img autores
 @mixin container_img_autores(){
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
     transform: translateX(-25%);
     margin-bottom: 2em;
+    div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .name_autor{
+            transform: translateY(-1.5em);
+        }
+    }
 }
 
 // Img autores
@@ -49,38 +57,43 @@
     width: 80px;
     height: 80px;
     border-radius: 50%;
+    background-size: contain;
 }
 
 // boton mp
 @mixin btn_mp(){
-        padding: .3em .7em;
-        background-color: #2b89b1;
-        border-radius: 10px;
-        box-shadow: $shadow;
-        font-size: 1em;
-        font-weight: 600;
-        text-decoration: none;
-        text-shadow: 3px 1px 3px $black-dark;
-        color: $white;
-        &:hover{
-            background-color: #009ee3;;
-        }
+    padding: .3em .7em;
+    background-color: #2b89b1;
+    border-radius: 10px;
+    box-shadow: $shadow;
+    font-size: 1em;
+    font-weight: 600;
+    text-decoration: none;
+    text-shadow: 3px 1px 3px $black-dark;
+    color: $white;
+    &:hover{
+        background-color: #009ee3;;
+    }
 }
 
 // botón de ig autores
 @mixin ig_autores(){
+    display: flex;
+    align-items: flex-start;
+    justify-content: start;
+    a{
         display: flex;
-        align-items: flex-start;
-        justify-content: start;
-        a{
-            display: flex;
-            align-items: center;
-            text-decoration: none;
-            img{
-                width: 80%;
-            }
-            h6{
-                color: $verde_agua;
-            }
+        align-items: center;
+        text-decoration: none;
+        color: $violeta-oscuro;
+        img{
+            width: 80%;
         }
+    }
+}
+
+@mixin leer(){
+    color: $violeta-oscuro;
+    text-decoration: none;
+    font-size: 1.2em;
 }

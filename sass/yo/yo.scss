@@ -28,14 +28,14 @@
                 align-items: center;
                 justify-content: end;
                 flex-direction: row;
-                color: $verde_agua;
+                color: $violeta-oscuro;
            }
            .icons_yo:first-of-type{
             transform: translateY(10px);
            }
         }
         h1{
-            color: $verde_agua;
+            color: $violeta-oscuro;
         }
     }
     .contacto_yo{
@@ -54,7 +54,7 @@
             align-items: start;
             gap: .5em;
             p{
-                color: $verde_agua;
+                color: $violeta-oscuro;
                 font-size: 1.3em;
             }
         }
@@ -73,13 +73,12 @@
         @include border();
         div{
             h4{
-                color: $verde_agua;
+                color: $violeta-oscuro;
                 margin-bottom: .5em;
             }
             p{
                 width: 70%;
                 font-size: .8em;
-                color: grey;
             }
         }
         div{
@@ -102,7 +101,7 @@
         @include border();
         border-radius: 15px;
         h5{
-            color: $verde_agua;
+            color: $violeta-oscuro;
         }
         div{
             display: flex;
