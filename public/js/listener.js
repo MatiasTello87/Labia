@@ -46,9 +46,11 @@ btn_switch.addEventListener('click', ()=>{
         if (isHomePage()) {
         logo.src = "./img/lightmode/logo-light.png"
         console.log("queeeee")
-        }else{
-            // logo.src = "./img/icons/logo.png"
         }
+        // else{
+            
+        //     // logo.src = "./img/icons/logo.png"
+        // }
       
     }else{
         logo.src = "../img/icons/logo.png"
