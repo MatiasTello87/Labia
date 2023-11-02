@@ -36,25 +36,25 @@ btn_switch.addEventListener('click', ()=>{
     if(body.classList.contains('light')){
         console.log("funca");
         logo.src = "../img/lightmode/logo-light.png"
-        logo_footer.src = "./public/img/lightmode/logo-light.png"
-        firma.src= "./public/img/lightmode/firma_light.png"
-        hamburguer.src = "/public/img/lightmode/hamburguer_light.png"
-        x.src= "./public/img/lightmode/X-light.png"
+        logo_footer.src = "../img/lightmode/logo-light.png"
+        firma.src= "../img/lightmode/firma_light.png"
+        hamburguer.src = "../img/lightmode/hamburguer_light.png"
+        x.src= "../img/lightmode/X-light.png"
         // leer.style.color = "#904b5e";
         if (!isHomePage()) {
-            home.src = "./public/img/lightmode/home.png";
+            home.src = "..img/lightmode/home.png";
         }else{
-            home.src = "./public/img/icons/home-.png";
+            home.src = "../img/icons/home-.png";
         }
       
     }else{
-        logo.src = "./public/img/icons/logo.png"
-        logo_footer.src = "./public/img/icons/logo.png"
-        firma.src= "./public/img/icons/firma.png"
-        x.src= "./public/img/icons/X.png"
-        hamburguer.src= "./public/img/icons/hamburguer.png"
+        logo.src = "../img/icons/logo.png"
+        logo_footer.src = "../img/icons/logo.png"
+        firma.src= "../img/icons/firma.png"
+        x.src= "../img/icons/X.png"
+        hamburguer.src= "../img/icons/hamburguer.png"
         // leer.style.color = "#5e87b3";
-        home.src = "./public/img/icons/home-.png";
+        home.src = "../img/icons/home-.png";
 
 
 
@@ -64,5 +64,5 @@ btn_switch.addEventListener('click', ()=>{
 
 
 function isHomePage() {
-    return window.location.pathname === './public/index.html'; // Comprueba la URL actual
+    return window.location.pathname === '../index.html'; // Comprueba la URL actual
 }
