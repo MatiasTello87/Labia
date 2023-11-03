@@ -42,13 +42,13 @@ btn_switch.addEventListener('click', ()=>{
         x.src= "/public/img/lightmode/X-light.png"
         // home.src = "..img/lightmode/home.png";
 
-        leer.style.color = "#904b5e";
+        // leer.style.color = "#904b5e";
         if (isHomePage()) {
         logo.src = "./img/lightmode/logo-light.png"
         console.log("queeeee")
         }
         // else{
-            
+
         //     // logo.src = "./img/icons/logo.png"
         // }
       
