@@ -36,7 +36,7 @@ btn_switch.addEventListener('click', ()=>{
     if(body.classList.contains('light')){
         console.log("funca");
         // logo.src = "/public/img/lightmode/logo-light.png"
-        logo_footer.src = "/public/img/lightmode/logo-light.png"
+        // logo_footer.src = "/public/img/lightmode/logo-light.png"
         firma.src= "/public/img/lightmode/firma_light.png"
         hamburguer.src = "/public/img/lightmode/hamburguer_light.png"
         x.src= "/public/img/lightmode/X-light.png"
@@ -51,8 +51,8 @@ btn_switch.addEventListener('click', ()=>{
         // }
       
     }else{
-        logo.src = "../img/icons/logo.png"
-        logo_footer.src = "../img/icons/logo.png"
+        // logo.src = "../img/icons/logo.png"
+        // logo_footer.src = "../img/icons/logo.png"
         firma.src= "../img/icons/firma.png"
         x.src= "../img/icons/X.png"
         hamburguer.src= "../img/icons/hamburguer.png"
