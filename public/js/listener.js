@@ -40,9 +40,7 @@ btn_switch.addEventListener('click', ()=>{
         firma.src= "/public/img/lightmode/firma_light.png"
         hamburguer.src = "/public/img/lightmode/hamburguer_light.png"
         x.src= "/public/img/lightmode/X-light.png"
-        // home.src = "..img/lightmode/home.png";
 
-        // leer.style.color = "#904b5e";
         if (isHomePage()) {
         logo.src = "./img/lightmode/logo-light.png"
         console.log("queeeee")
@@ -58,11 +56,6 @@ btn_switch.addEventListener('click', ()=>{
         firma.src= "../img/icons/firma.png"
         x.src= "../img/icons/X.png"
         hamburguer.src= "../img/icons/hamburguer.png"
-        // home.src = "../img/icons/home-.png";
-
-        // leer.style.color = "#5e87b3";
-        // home.src = "../img/icons/home-.png";
-
     }
 })
 
