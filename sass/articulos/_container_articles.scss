@@ -10,6 +10,7 @@
         margin: 3em;
         h1{
             @include titles();
+            // color: $colorado;
         }
         img{
             width: 80px;

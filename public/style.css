@@ -429,6 +429,12 @@ body.light nav {
 body.light nav li a {
   color: #0a0a0a;
 }
+body.light .article_title h1 {
+  color: #42283f;
+}
+body.light .article_article h4 {
+  color: #904b5e;
+}
 body.light footer .yo {
   color: #904b5e;
 }
@@ -1057,17 +1063,23 @@ body footer .yo .firma {
   border: 1px inset #0a0a0a;
   cursor: pointer;
 }
-body footer a img {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  border: 1px inset #0a0a0a;
+body footer a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body footer a .logo_footer {
+  width: 20%;
 }
 body footer .contacto {
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 1em;
+}
+body footer .contacto div {
+  display: flex;
+  gap: 0.5em;
 }
 body footer .contacto a img {
   width: 30px;
@@ -1190,6 +1202,9 @@ body footer .contacto a img {
   body .taller_flex .taller_flex_items .taller_descripcion .taller_descripcion_p {
     width: 100%;
   }
+  body footer a .logo_footer {
+    width: 30%;
+  }
 }
 @media screen and (max-width: 576px) {
   body .inicio {
@@ -1269,9 +1284,8 @@ body footer .contacto a img {
     width: 25px;
     height: 25px;
   }
-  body footer a img {
-    width: 30px;
-    height: 30px;
+  body footer a .logo_footer {
+    width: 40%;
   }
   body footer .contacto {
     gap: 0.5em;

@@ -24,7 +24,7 @@ x.addEventListener('click',()=>{
 
 // Darkmode
 const logo = document.querySelector('.icon_logo');
-const logo_footer = document.querySelector('.logo_footer');
+// const logo_footer = document.querySelector('.logo_footer');
 const firma = document.querySelector('.firma')
 const body = document.body;
 const home = document.querySelector('.home')
@@ -41,7 +41,7 @@ btn_switch.addEventListener('click', ()=>{
         if (isOnPage('/index.html')){
         if(body.classList.contains('light')){
             logo.src = "./img/lightmode/logo-light.png"
-            logo_footer.src = "./img/lightmode/logo-light.png"
+            // logo_footer.src = "./img/lightmode/logo-light.png"
             firma.src= "./img/lightmode/firma_light.png"
             x.src= "./img/lightmode/X-light.png"
             hamburguer.src= "./img/lightmode/hamburguer_light.png"
@@ -49,7 +49,7 @@ btn_switch.addEventListener('click', ()=>{
         }
         else{
             logo.src = "./img/icons/logo.png"
-            logo_footer.src = "./img/icons/logo.png"
+            // logo_footer.src = "./img/icons/logo.png"
             firma.src= "./img/icons/firma.png"
             x.src= "./img/icons/X.png"
             hamburguer.src= "./img/icons/hamburguer.png"
@@ -61,7 +61,7 @@ btn_switch.addEventListener('click', ()=>{
     else if(isOnPage('/pages/articles.html') || isOnPage('/pages/yo.html') || isOnPage('/pages/contacto.html') || isOnPage('/pages/video.html')){
         if(body.classList.contains('light')){
             logo.src = "../img/lightmode/logo-light.png"
-            logo_footer.src = "../img/lightmode/logo-light.png"
+            // logo_footer.src = "../img/lightmode/logo-light.png"
             firma.src= "../img/lightmode/firma_light.png"
             x.src= "../img/lightmode/X-light.png"
             hamburguer.src= "../img/lightmode/hamburguer_light.png"
@@ -69,7 +69,7 @@ btn_switch.addEventListener('click', ()=>{
         }
         else{
             logo.src = "../img/icons/logo.png"
-            logo_footer.src = "../img/icons/logo.png"
+            // logo_footer.src = "../img/icons/logo.png"
             firma.src= "../img/icons/firma.png"
             x.src= "../img/icons/X.png"
             hamburguer.src= "../img/icons/hamburguer.png"
@@ -79,14 +79,14 @@ btn_switch.addEventListener('click', ()=>{
         if(body.classList.contains('light')){
             console.log("estas en lucas cande")
             logo.src = "../../img/lightmode/logo-light.png"
-            logo_footer.src = "../../img/lightmode/logo-light.png"
+            // logo_footer.src = "../../img/lightmode/logo-light.png"
             firma.src= "../../img/lightmode/firma_light.png"
             x.src= "../../img/lightmode/X-light.png"
             hamburguer.src= "../../img/lightmode/hamburguer_light.png"
         }
         else{
             logo.src = "../../img/icons/logo.png"
-            logo_footer.src = "../../img/icons/logo.png"
+            // logo_footer.src = "../../img/icons/logo.png"
             firma.src= "../../img/icons/firma.png"
             x.src= "../../img/icons/X.png"
             hamburguer.src= "../../img/icons/hamburguer.png"

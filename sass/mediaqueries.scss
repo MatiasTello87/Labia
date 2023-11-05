@@ -149,6 +149,14 @@
                 }
             }
         }
+        footer{
+            a{
+                .logo_footer{
+                    width: 30%;
+                    // height: 30px;
+                }
+            }
+        }
     }
 }
 @media screen and (max-width: 576px){
@@ -239,9 +247,9 @@
                 }
             }
             a{
-                img{
-                    width: 30px;
-                    height: 30px;
+                .logo_footer{
+                    width: 40%;
+                    // height: 30px;
                 }
             }
             .contacto{
