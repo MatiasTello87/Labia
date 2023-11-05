@@ -1,94 +1,91 @@
 @mixin header(){
-        height: 80px;
-        min-width: 100%;
-        position: sticky;
-        top: 0;
-        z-index: 10;
+    height: 80px;
+    min-width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+    border-bottom: 1px inset black;
+    @include corner_bottom();
+    box-shadow: $shadow;
+    backdrop-filter: blur(4px);
+    .icon_logo{
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        @include border();
+        cursor: pointer;
+    }
+    div{
         display: flex;
+        flex-direction: row;
         justify-content: space-between;
         align-items: center;
-        padding: 1em;
-        border-bottom: 1px inset black;
-        @include corner_bottom();
-        box-shadow: $shadow;
-        backdrop-filter: blur(4px);
-        .icon_logo{
-            width: 50px;
-            height: 50px;
-            border-radius: 50%;
-            @include border();
+        gap: 2em;
+        transition: all 3s;
+        .btn_switch{
+            @include btn_switch ();
+        }
+        .hamburguer{
+            width: 30%;
+            opacity: .7;
             cursor: pointer;
-        }
-        div{
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            align-items: center;
-            gap: 2em;
-            transition: all 3s;
-            .btn_switch{
-                @include btn_switch ();
+            &:hover{
+                transform:translateY(-1px);
             }
-            .hamburguer{
-                width: 30%;
-                opacity: .7;
-                cursor: pointer;
+        }
+    }
+    nav{
+        opacity: 0;
+        visibility: hidden;
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 200px;
+        height: 270px;
+        padding: 2em;
+        display: flex;
+        flex-direction: column;
+        list-style-type: none;
+        gap: 1em;
+        justify-content: space-between;
+        align-items: end;
+        transform: translateY(-1px);
+        @include corner_bottom();
+        @include border ();
+        background-image: linear-gradient(to right , #0f0f0fee ,#000000c9);
+        box-shadow: 0 0 0 100vmax rgba(0,0,0,.7);
+        transition: all 1s ease-in-out;    
+        li{
+            list-style-type: none;
+            &:hover{
+                transform: translate(-2px, -3px);
+                transition: all .3s ease-out;    
+            }
+            a{
+                color: $white;
+                font-size: 1.3em;
+                text-decoration: none;
                 &:hover{
-                    transform:translateY(-1px);
+                    color: $blue;
                 }
             }
-
-        }
-            nav{
-                opacity: 0;
-                visibility: hidden;
-                position: absolute;
-                top: 0;
-                right: 0;
-    
-                width: 200px;
-                height: 270px;
-                padding: 2em;
-                display: flex;
-                flex-direction: column;
-                list-style-type: none;
-                gap: 1em;
-                justify-content: space-between;
-                align-items: end;
-                transform: translateY(-1px);
-                @include corner_bottom();
-                @include border ();
-                background-image: linear-gradient(to right , #0f0f0fee , #000000c9);
-    
-                box-shadow: 0 0 0 100vmax rgba(0,0,0,.7);
-                transition: all 1s ease-in-out;    
-                li{
-                    list-style-type: none;
-                    &:hover{
-                        transform: translate(-2px, -3px);
-                        transition: all .3s ease-out;    
-                    }
-                    a{
-                        color: $white;
-                        font-size: 1.3em;
-                        text-decoration: none;
-                        &:hover{
-                            color: $blue;
-                        }
-                    }
-                    img{
-                        width: 25px;
-                        height: 25px;
-                        font-weight: 600;
-                        background-color: transparent;
-                        cursor: pointer;
-                        @include border();
-                        border-radius: 50%;
-                        box-shadow: $shadow;
-                    }
-                }
+            img{
+                width: 25px;
+                height: 25px;
+                font-weight: 600;
+                background-color: transparent;
+                cursor: pointer;
+                @include border();
+                border-radius: 50%;
+                box-shadow: $shadow;
             }
         }
+    }
+}
         .visible{
             opacity: 1;
             visibility: visible;

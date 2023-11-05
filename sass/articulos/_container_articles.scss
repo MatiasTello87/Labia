@@ -3,21 +3,21 @@
     justify-content: space-around;
     align-items: center;
     flex-direction: column;
-    .article_title{
-        display: flex;
-        justify-content: space-around;
-        gap: 2em;
-        margin: 3em;
-        h1{
-            @include titles();
-            // color: $colorado;
-        }
+    .foto_cande{
+        @include container_img_autores();
         img{
-            width: 80px;
-            height: 80px;
-            border-radius: 50%;
+            @include img_autores();
         }
-
+    }
+    .foto_lucas{
+        @include container_img_autores();
+        img{
+            @include img_autores();
+        }
+    }
+    h1{
+        @include titles();
+        margin-bottom: 2em;
     }
     .article_article{
         @include  border();

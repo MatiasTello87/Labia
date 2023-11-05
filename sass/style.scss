@@ -74,7 +74,7 @@ body{
                 color: $black-dark;
             }
         }
-        .article_title{
+        .article_section{
             h1{
                 color: $colorado;
             }
@@ -84,9 +84,6 @@ body{
                 color: $violeta-oscuro;
             }
         }
-        // .name_ig{
-        //     color: $violeta-oscuro;
-        // }
         footer{
             .yo{
                 color: $violeta-oscuro;
@@ -95,9 +92,7 @@ body{
                 color: $violeta-oscuro;
             }
         }
-        
     }
-   
     header{
         @include header();
     }
@@ -142,7 +137,6 @@ body{
                @include ig_autores();
             }
         }
-
     }
     // Articulo Cande
     .index_ley_danza{
@@ -179,7 +173,6 @@ body{
             }
         }
     }
-
     .videoteca_index{
         @include container_section();
         border: none;
@@ -189,7 +182,6 @@ body{
         h2{
             @include titles();
         }
-    
         article{
             display: flex;
             flex-direction: column;
@@ -217,7 +209,6 @@ body{
             }     
         }
     }
-
     // Articulo lucas
     .index_section{
         @include container_section();
@@ -253,7 +244,6 @@ body{
         }
     }
 // Laura
-       
     .index_laura{
         @include container_section();
         .genero{
@@ -267,9 +257,9 @@ body{
             box-shadow: $shadow;
             .foto_laura{
                 @include container_img_autores();
-                    img{
-                        @include img_autores();
-                    }
+                img{
+                    @include img_autores();
+                }
             }
             h2{
                 @include titles();
@@ -325,16 +315,16 @@ body{
             h2{
                 text-align: center;
             }
-                p{
-                    width: 70%;
-                    text-align: center;
-                }
-                 .btn_mp{
-                    @include btn_mp();
-                }
-                h2{
-                    @include titles();
-                }
+            p{
+                width: 70%;
+                text-align: center;
+            }
+            .btn_mp{
+                @include btn_mp();
+            }
+            h2{
+                @include titles();
+            }
         }
     footer{
         @include footer();

@@ -22,7 +22,6 @@
             border-radius: 50%;
             @include border();
             cursor: pointer;
-            // box-shadow: $shadow;
         }
     }
     a{
@@ -31,10 +30,6 @@
         align-items: center;
         .logo_footer{
             width: 20%;
-            // height: 40px;
-            // border-radius: 50%;
-            // @include border();
-
         }
     }
     .contacto{
@@ -50,7 +45,6 @@
             img{
                 width: 30px;
                 height: 30px;
-                // opacity: 1;
                 border: none;
             }
         }
