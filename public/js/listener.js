@@ -143,5 +143,9 @@ if(localStorage.getItem('lightmode') === 'true'){
     else{
         document.body.classList.remove('light')
         btn_switch.classList.remove('active')
+        logo.src = "./img/icons/logo.png"
+        firma.src= "./img/icons/firma.png"
+        x.src= "./img/icons/X.png"
+        hamburguer.src= "./img/icons/hamburguer.png"
     }
 }
