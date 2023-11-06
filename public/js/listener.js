@@ -39,15 +39,8 @@ btn_switch.addEventListener('click', ()=>{
         const currentPageURL = window.location.pathname;
         return currentPageURL.endsWith(pageName);
         }
-//   // guardar modo en local storage
-//   if(document.body.classList.contains('light')){
-//     localStorage.setItem('lightmode', 'true');
-// }
-// else{
-//     localStorage.setItem('lightmode', 'false');
-// }  
-
-        if (isOnPage('/public/index.html')){
+        
+        if (isOnPage('/index.html')){
         if(document.body.classList.contains('light')){
             localStorage.setItem('lightmode', 'true');
             logo.src = "./img/lightmode/logo-light.png"
@@ -94,7 +87,7 @@ btn_switch.addEventListener('click', ()=>{
             hamburguer.src= "../../img/icons/hamburguer.png"
         }
     }
-   
+    
 })
 // Obtener el modo actual
 if(localStorage.getItem('lightmode') === 'true'){
@@ -160,3 +153,11 @@ if(localStorage.getItem('lightmode') === 'true'){
         x.src= "./img/icons/X.png"
         hamburguer.src= "./img/icons/hamburguer.png"
     }
+    
+    //   // guardar modo en local storage
+    //   if(document.body.classList.contains('light')){
+    //     localStorage.setItem('lightmode', 'true');
+    // }
+    // else{
+    //     localStorage.setItem('lightmode', 'false');
+    // }  
