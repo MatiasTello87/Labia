@@ -37,6 +37,12 @@ function isOnPage(pageName) {
 btn_switch.addEventListener('click', ()=>{
     document.body.classList.toggle('light')
     btn_switch.classList.toggle('active')
+    
+function isOnPage(pageName) {
+    // Obtener la URL actual
+    const currentPageURL = window.location.pathname;
+    return currentPageURL.endsWith(pageName);
+    }
         if (isOnPage('/index.html')){
         if(body.classList.contains('light')){
             logo.src = "./img/lightmode/logo-light.png"
