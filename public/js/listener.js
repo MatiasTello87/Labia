@@ -29,33 +29,35 @@ const body = document.body;
 const home = document.querySelector('.home')
 
 
-function isOnPage(pageName) {
-    // Obtener la URL actual
-    const currentPageURL = window.location.pathname;
-    return currentPageURL.endsWith(pageName);
-    }
+
 btn_switch.addEventListener('click', ()=>{
     document.body.classList.toggle('light')
     btn_switch.classList.toggle('active')
     
-isOnPage(); 
-  // guardar modo en local storage
-  if(document.body.classList.contains('light')){
-    localStorage.setItem('lightmode', 'true');
-}
-else{
-    localStorage.setItem('lightmode', 'false');
-}  
+    function isOnPage(pageName) {
+        // Obtener la URL actual
+        const currentPageURL = window.location.pathname;
+        return currentPageURL.endsWith(pageName);
+        }
+//   // guardar modo en local storage
+//   if(document.body.classList.contains('light')){
+//     localStorage.setItem('lightmode', 'true');
+// }
+// else{
+//     localStorage.setItem('lightmode', 'false');
+// }  
 
-        if (isOnPage('/index.html')){
-        if(body.classList.contains('light')){
+        if (isOnPage('/public/index.html')){
+        if(document.body.classList.contains('light')){
+            localStorage.setItem('lightmode', 'true');
             logo.src = "./img/lightmode/logo-light.png"
             firma.src= "./img/lightmode/firma_light.png"
             x.src= "./img/lightmode/X-light.png"
             hamburguer.src= "./img/lightmode/hamburguer_light.png"
-            console.log('Estás en la página index.html wacho');
+            console.log('Estás en la página inde wacho');
         }
         else{
+            localStorage.setItem('lightmode', 'false');
             logo.src = "./img/icons/logo.png"
             firma.src= "./img/icons/firma.png"
             x.src= "./img/icons/X.png"
@@ -98,6 +100,11 @@ else{
 if(localStorage.getItem('lightmode') === 'true'){
     document.body.classList.add('light')
     btn_switch.classList.add('active')
+    function isOnPage(pageName) {
+        // Obtener la URL actual
+        const currentPageURL = window.location.pathname;
+        return currentPageURL.endsWith(pageName);
+        }
     if (isOnPage('/index.html')){
         if(body.classList.contains('light')){
             logo.src = "./img/lightmode/logo-light.png"
@@ -144,6 +151,7 @@ if(localStorage.getItem('lightmode') === 'true'){
         }
     }
       
+}
     else{
         document.body.classList.remove('light')
         btn_switch.classList.remove('active')
@@ -152,4 +160,3 @@ if(localStorage.getItem('lightmode') === 'true'){
         x.src= "./img/icons/X.png"
         hamburguer.src= "./img/icons/hamburguer.png"
     }
-}
