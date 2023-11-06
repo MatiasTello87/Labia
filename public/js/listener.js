@@ -38,11 +38,15 @@ btn_switch.addEventListener('click', ()=>{
     document.body.classList.toggle('light')
     btn_switch.classList.toggle('active')
     
-function isOnPage(pageName) {
-    // Obtener la URL actual
-    const currentPageURL = window.location.pathname;
-    return currentPageURL.endsWith(pageName);
-    }
+isOnPage(); 
+  // guardar modo en local storage
+  if(document.body.classList.contains('light')){
+    localStorage.setItem('lightmode', 'true');
+}
+else{
+    localStorage.setItem('lightmode', 'false');
+}  
+
         if (isOnPage('/index.html')){
         if(body.classList.contains('light')){
             logo.src = "./img/lightmode/logo-light.png"
@@ -88,13 +92,7 @@ function isOnPage(pageName) {
             hamburguer.src= "../../img/icons/hamburguer.png"
         }
     }
-    // guardar modo en local storage
-    if(document.body.classList.contains('light')){
-        localStorage.setItem('lightmode', 'true');
-    }
-    else{
-        localStorage.setItem('lightmode', 'false');
-    }   
+   
 })
 // Obtener el modo actual
 if(localStorage.getItem('lightmode') === 'true'){
