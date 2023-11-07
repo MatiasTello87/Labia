@@ -103,6 +103,8 @@ if(localStorage.getItem('lightmode') === 'true'){
         }
     if (isOnPage('/index.html')){
         if(body.classList.contains('light')){
+            localStorage.setItem('lightmode', 'true');
+
             logo.src = "./img/lightmode/logo-light.png"
             firma.src= "./img/lightmode/firma_light.png"
             x.src= "./img/lightmode/X-light.png"
@@ -110,6 +112,8 @@ if(localStorage.getItem('lightmode') === 'true'){
             console.log('Estás en la página index.html del local');
         }
         else{
+            localStorage.setItem('lightmode', 'false');
+
             logo.src = "./img/icons/logo.png"
             firma.src= "./img/icons/firma.png"
             x.src= "./img/icons/X.png"
@@ -118,6 +122,8 @@ if(localStorage.getItem('lightmode') === 'true'){
     }
     else if(isOnPage('/pages/articles.html') || isOnPage('/pages/yo.html') || isOnPage('/pages/contacto.html') || isOnPage('/pages/video.html')){
         if(body.classList.contains('light')){
+            localStorage.setItem('lightmode', 'true');
+
             logo.src = "../img/lightmode/logo-light.png"
             firma.src= "../img/lightmode/firma_light.png"
             x.src= "../img/lightmode/X-light.png"
@@ -125,6 +131,8 @@ if(localStorage.getItem('lightmode') === 'true'){
             console.log('Estás en la página video del local');
         }
         else{
+            localStorage.setItem('lightmode', 'false');
+            
             logo.src = "../img/icons/logo.png"
             firma.src= "../img/icons/firma.png"
             x.src= "../img/icons/X.png"
@@ -133,6 +141,8 @@ if(localStorage.getItem('lightmode') === 'true'){
     }
     else if(isOnPage('/pages/articles_pages/cande.html') || isOnPage('/pages/articles_pages/lucas.html')){
         if(body.classList.contains('light')){
+            localStorage.setItem('lightmode', 'true');
+
             console.log("estas en lucas cande")
             logo.src = "../../img/lightmode/logo-light.png"
             firma.src= "../../img/lightmode/firma_light.png"
@@ -140,6 +150,8 @@ if(localStorage.getItem('lightmode') === 'true'){
             hamburguer.src= "../../img/lightmode/hamburguer_light.png"
         }
         else{
+            localStorage.setItem('lightmode', 'false');
+
             logo.src = "../../img/icons/logo.png"
             firma.src= "../../img/icons/firma.png"
             x.src= "../../img/icons/X.png"
@@ -151,10 +163,7 @@ if(localStorage.getItem('lightmode') === 'true'){
     else{
         document.body.classList.remove('light')
         btn_switch.classList.remove('active')
-        logo.src = "./img/icons/logo.png"
-        firma.src= "./img/icons/firma.png"
-        x.src= "./img/icons/X.png"
-        hamburguer.src= "./img/icons/hamburguer.png"
+       
     }
     
     //   // guardar modo en local storage
