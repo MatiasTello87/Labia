@@ -8,60 +8,65 @@
     gap: 8em;
   }
   body .inicio .description {
-    width: 80%;
-  }
-  body .index_section h2 {
-    font-size: 2em;
-  }
-  body .index_section .autor_articulo {
-    flex-direction: column;
-    align-items: center;
-    width: 400px;
-    text-align: start;
-  }
-  body .videoteca_index div {
-    height: 350px;
-  }
-  body .videoteca_index iframe {
-    max-width: 100%;
-    max-height: 100%;
-  }
-  body .videoteca_index p {
-    width: 70%;
+    width: 90%;
   }
   body .contacto_index {
     width: 70%;
   }
+  body .yo_section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 3em;
+  }
+  body .yo_section .img_yo {
+    width: 80%;
+    flex-direction: column;
+    align-items: start;
+  }
+  body .yo_section .img_yo div p {
+    text-align: start;
+    width: 80%;
+  }
+  body .yo_section .contacto_yo {
+    width: 60%;
+    border: none;
+    text-align: center;
+  }
+  body .yo_section .colaboracion {
+    width: 50%;
+  }
 }
 @media screen and (max-width: 768px) {
+  body .section_david .dia p {
+    width: 100%;
+  }
   body .index_section {
     padding: 5em 2em;
-  }
-  body .index_section div {
-    flex-direction: column;
-    gap: 3em;
-    align-items: center;
-  }
-  body .index_section div article {
     width: 100%;
-    padding: 3em 2em;
   }
-  body .index_section div article h2 {
+  body .index_section article {
+    padding: 3em 2em;
+    max-width: 100%;
+  }
+  body .index_section article h2 {
     line-height: 1em;
   }
-  body .index_section div article p {
+  body .index_section article p {
     font-size: 1em;
   }
-  body .index_section div .autor_articulo {
-    width: 100%;
+  body .videoteca_index article {
     padding: 3em 2em;
-    align-items: end;
   }
-  body .index_section div .autor_articulo p {
-    text-align: start;
+  body .index_ley_danza {
+    width: 100%;
   }
-  body .videoteca_index div {
-    height: 315px;
+  body .index_ley_danza article {
+    padding: 3em 2em;
+  }
+  body .index_ley_danza p {
+    width: 100%;
   }
   body .contacto_index {
     width: 90%;
@@ -70,6 +75,30 @@
   }
   body .aporte_index button {
     transform: translateX(350px);
+  }
+  body .tarjetas_articles {
+    flex-direction: column;
+  }
+  body .article_section {
+    max-width: 100%;
+  }
+  body .article_section .article_title {
+    flex-direction: column;
+    align-items: center;
+  }
+  body .article_section .article_article {
+    padding: 1em;
+    width: 90%;
+  }
+  body .article_section .article_article h2 {
+    font-size: 1em;
+    line-height: 1.5em;
+  }
+  body .yo_section .colaboracion {
+    width: 90%;
+  }
+  body .yo_section .img_yo img {
+    width: 80%;
   }
   body .taller_flex .taller_flex_items {
     height: 500px;
@@ -84,21 +113,67 @@
   body .taller_flex .taller_flex_items .taller_descripcion .taller_descripcion_p {
     width: 100%;
   }
+  body footer a .logo_footer {
+    width: 30%;
+  }
 }
 @media screen and (max-width: 576px) {
+  body .inicio {
+    width: 100%;
+    padding: 1em;
+  }
+  body .inicio .description {
+    width: 100%;
+  }
+  body .section_david {
+    flex-direction: column;
+  }
+  body .section_david .dia {
+    width: 100%;
+  }
+  body .section_david .dia h2 {
+    width: 100%;
+  }
   body .index_section {
     padding: 0;
   }
-  body .index_section .genero {
-    margin-right: 2em;
-  }
   body .videoteca_index {
-    padding: 2em;
+    width: 100%;
+    padding: 1em;
   }
-  body .videoteca_index div {
-    height: 220px;
+  body .videoteca_index article {
+    padding: 1em;
   }
-  body .videoteca_index p {
+  body .videoteca_index article p {
+    width: 100%;
+  }
+  body .videoteca_index article .iframe {
+    height: 185px;
+    margin: 0 auto;
+  }
+  body .index_ley_danza {
+    padding: 1em;
+  }
+  body .index_ley_danza article {
+    padding: 1em;
+  }
+  body .index_ley_danza article p {
+    width: 100%;
+  }
+  body .index_laura {
+    padding: 0;
+  }
+  body .index_laura article p {
+    width: 100%;
+  }
+  body .index_laura article h5 {
+    width: 50%;
+  }
+  body .index_laura article .iframe {
+    height: 185px;
+    margin: 0 auto;
+  }
+  body .contacto_index {
     width: 100%;
   }
   body .aporte_index {
@@ -107,8 +182,29 @@
   body .aporte_index p {
     width: 80%;
   }
-  body .contacto_index {
-    width: 100%;
+  body footer {
+    height: 100px;
+    padding: 0;
+    align-items: center;
+  }
+  body footer .yo {
+    flex-direction: column-reverse;
+    gap: 0.5em;
+  }
+  body footer .yo .firma {
+    width: 25px;
+    height: 25px;
+  }
+  body footer a .logo_footer {
+    width: 40%;
+  }
+  body footer .contacto {
+    gap: 0.5em;
+    flex-direction: column;
+  }
+  body footer .contacto div a img {
+    width: 25px;
+    height: 25px;
   }
   body .proximamente {
     max-width: 90%;
@@ -117,6 +213,23 @@
   body .proximamente img {
     max-width: 130%;
     margin-bottom: 3em;
+  }
+  body .yo_section {
+    padding: 1em;
+  }
+  body .yo_section .img_yo {
+    width: 100%;
+    padding: 1em;
+  }
+  body .yo_section .iconos_skills {
+    width: 50%;
+    flex-wrap: wrap;
+  }
+  body .yo_section .iconos_skills div {
+    justify-content: space-evenly;
+  }
+  body .yo_section .colaboracion div p {
+    width: 100%;
   }
   body .taller_flex {
     gap: 50px;
@@ -144,18 +257,10 @@
   html {
     width: 105vw;
   }
-  body .videoteca_index div {
-    height: 195px;
+  body .index_section article h2 {
+    font-size: 2em;
   }
   body .aporte_index button {
     transform: translateX(150px);
-  }
-  body footer .contacto {
-    flex-direction: column;
-    gap: 0;
-  }
-  body footer .contacto div a img {
-    width: 20px;
-    height: 20px;
   }
 }

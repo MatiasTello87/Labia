@@ -3,6 +3,13 @@
     justify-content: space-around;
     align-items: center;
     flex-direction: column;
+    span{
+        position: absolute;
+        left: 0;
+        top: 4em;
+        padding: 1em;
+        font-size: 1.5em;
+    }
     .foto_cande{
         @include container_img_autores();
         img{
@@ -34,8 +41,18 @@
                 line-height: 1em;
                 color: $violeta-oscuro;
             }
+            img{
+                max-width: 300px;
+                margin: auto;
+            }
             h4{
                 color: $blue;
+            }
+            ul{
+                margin: .5em;
+                li{
+                    padding: .3em;
+                }
             }
             .cita_link{
                 margin: 0;

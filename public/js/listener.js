@@ -74,7 +74,7 @@ btn_switch.addEventListener('click', ()=>{
             hamburguer.src= "../img/icons/hamburguer.png"
         }
     }
-    else if(isOnPage('/pages/articles_pages/cande.html') || isOnPage('/pages/articles_pages/lucas.html')){
+    else if(isOnPage('/pages/articles_pages/2.html') || isOnPage('/pages/articles_pages/1.html') ||isOnPage('/pages/articles_pages/3.html') ||isOnPage('/pages/articles_pages/el_mito.html') ||isOnPage('/pages/articles_pages/4.html') ||isOnPage('/pages/articles_pages/6.html') ||isOnPage('/pages/articles_pages/5.html') ){
         if(body.classList.contains('light')){
             localStorage.setItem('lightmode', 'true');
             logo.src = "../../img/lightmode/logo-light.png"
@@ -139,7 +139,7 @@ if(localStorage.getItem('lightmode') === 'true'){
             hamburguer.src= "../img/icons/hamburguer.png"
         }
     }
-    else if(isOnPage('/pages/articles_pages/cande.html') || isOnPage('/pages/articles_pages/lucas.html')){
+    else if(isOnPage('/pages/articles_pages/2.html') || isOnPage('/pages/articles_pages/1.html') || isOnPage('/pages/articles_pages/4.html') || isOnPage('/pages/articles_pages/3.html') || isOnPage('/pages/articles_pages/5.html') || isOnPage('/pages/articles_pages/6.html')){
         if(body.classList.contains('light')){
             localStorage.setItem('lightmode', 'true');
 
@@ -166,10 +166,3 @@ if(localStorage.getItem('lightmode') === 'true'){
        
     }
     
-    //   // guardar modo en local storage
-    //   if(document.body.classList.contains('light')){
-    //     localStorage.setItem('lightmode', 'true');
-    // }
-    // else{
-    //     localStorage.setItem('lightmode', 'false');
-    // }  

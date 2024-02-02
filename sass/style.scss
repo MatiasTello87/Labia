@@ -56,13 +56,14 @@ body{
     overflow-x: hidden;
     position: relative;
     transition: all 3s ease;
+    position: relative;
     h2{
         color: $blue;
     }
     &.light{
         background-image: linear-gradient(to right , $white_gray , $white);
         color: $black-dark;
-        h2{
+        .titles_light{
             color: $colorado;
         }
         .name_autor{
@@ -74,8 +75,25 @@ body{
                 color: $black-dark;
             }
         }
+            
         .article_section{
+            span{
+                color: $colorado;
+            }
             h1{
+                color: $colorado;
+            }
+            a{
+                color: $violeta-oscuro;
+            }
+        }
+        .videoteca_index{
+            h2{
+                color: $colorado;
+            }
+        }
+        .index_laura{
+            h2{
                 color: $colorado;
             }
         }
@@ -165,6 +183,9 @@ body{
             p{
                 width: 90%;
             }
+            h5{
+                width: 70%;
+            }
             .leer{
                @include leer();
             }
@@ -234,6 +255,9 @@ body{
             }
             h2{
                 @include titles();
+            }
+            h5{
+                width: 70%;
             }
             .leer{
                 @include leer();

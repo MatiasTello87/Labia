@@ -8,7 +8,7 @@
     align-items: center;
     .img_yo{
         padding: 2em;
-        @include border();
+        // @include border();
         border-radius: 15px;
         grid-column: 1/3;
         grid-row: 1/4;
@@ -20,6 +20,9 @@
            gap: .5em;
            img{
             max-width: 200px;
+           }
+           span{
+            align-self: start;
            }
            p{
                text-align: start;

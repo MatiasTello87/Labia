@@ -11,44 +11,58 @@
 
 .tarjetas_articles{
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     .page_articles{
         @include container_section();
         padding: 1em;
         box-shadow: none;
         border: none;
+        span{
+        width: 32px;
+        padding: .3em;
+        // border-radius: 5px;
+        // box-shadow: $shadow;
+        // background-color: transparent;
+        // color: transparent;
+        }
         article{
             display: flex;
             flex-direction: column;
-            padding: 2em;
+            padding: 2em ;
             gap: 1em;
             width: 400px;
-            height: 335px;
+            // height: 335px;
             box-shadow: $shadow;
             @include corner_right();
             @include border();
+            position: relative;
             .genero_tarjeta{
                 color: $white;
                 font-size: 1em;
                 text-align: start;
                 margin-right: 0;
                 color: $violeta-oscuro;
+                margin-bottom: 1em;
             }
             .foto_lucas{
                 @include container_img_autores();
-                margin-bottom: 0;
+                position: absolute;
+                right: 1em;
                 img{
                     @include img_autores();
                 }
             }
             .foto_cande{
                 @include container_img_autores();
-                margin-bottom: 0;
+                position: absolute;
+                right: 1em;
                 img{
                     @include img_autores();
                 }   
             }
             h2{
-                @include titles();
+                // @include titles();
                 font-size: 1.5em;
             }
             a{
