@@ -148,7 +148,7 @@
     font-size: 2.5em;
     line-height: 1em;
     text-shadow: 2px 1px 10px rgba(15, 15, 15, 0.843137);
-    color: #3E92CC;
+    color: #2B70A1;
     margin-bottom: 2em; }
   .article_section .article_article {
     border: 1px inset #0a0a0a;
@@ -168,7 +168,7 @@
         max-width: 300px;
         margin: auto; }
       .article_section .article_article div h4 {
-        color: #3E92CC; }
+        color: #2B70A1; }
       .article_section .article_article div ul {
         margin: .5em; }
         .article_section .article_article div ul li {
@@ -179,7 +179,7 @@
         font-size: 1em; }
   .article_section a {
     text-decoration: none;
-    color: #3E92CC;
+    color: #2B70A1;
     display: flex;
     justify-content: flex-end;
     margin: 3em;
@@ -341,7 +341,7 @@ body {
   transition: all 3s ease;
   position: relative; }
   body h2 {
-    color: #3E92CC; }
+    color: #2B70A1; }
   body.light {
     background-image: linear-gradient(to right, #ccccccc9, #c1c1c1);
     color: #0a0a0a; }
@@ -466,7 +466,7 @@ body {
           font-size: 1.3em;
           text-decoration: none; }
           body header nav li a:hover {
-            color: #3E92CC; }
+            color: #2B70A1; }
         body header nav li img {
           width: 25px;
           height: 25px;
@@ -531,7 +531,7 @@ body {
       font-size: 2.5em;
       line-height: 1em;
       text-shadow: 2px 1px 10px rgba(15, 15, 15, 0.843137);
-      color: #3E92CC; }
+      color: #2B70A1; }
     body .videoteca_index article {
       display: flex;
       flex-direction: column;
@@ -630,7 +630,7 @@ body {
         font-size: 2.5em;
         line-height: 1em;
         text-shadow: 2px 1px 10px rgba(15, 15, 15, 0.843137);
-        color: #3E92CC; }
+        color: #2B70A1; }
       body .index_section article p {
         width: 95%;
         text-wrap: balance; }
@@ -677,7 +677,7 @@ body {
       font-size: 2.5em;
       line-height: 1em;
       text-shadow: 2px 1px 10px rgba(15, 15, 15, 0.843137);
-      color: #3E92CC; }
+      color: #2B70A1; }
     body .contacto_index .contacto_index_iconos {
       border-left: 1px inset #f0efef; }
       body .contacto_index .contacto_index_iconos .contacto_index_iconos_items {
@@ -723,7 +723,7 @@ body {
       font-size: 2.5em;
       line-height: 1em;
       text-shadow: 2px 1px 10px rgba(15, 15, 15, 0.843137);
-      color: #3E92CC; }
+      color: #2B70A1; }
   body footer {
     height: 80px;
     min-width: 100%;
