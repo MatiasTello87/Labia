@@ -41,6 +41,10 @@
         }
     }
 }
+
+// 
+// 
+
 @media screen and (max-width: 768px){
     body{
         // // Dia Nacional de la Danza
@@ -51,6 +55,7 @@
                 }
             }
         }
+        // 
         .index_section{
             padding: 5em 2em;
             width: 100%;
@@ -64,26 +69,20 @@
                         font-size: 1em;
                     } 
                 }
-            }
-            .videoteca_index{
+        }
+        // 
+        .videoteca_index{
                 article{
                     padding: 3em 2em;
                 }
-            }
-            .index_ley_danza{
-                width: 100%;
-                article{
-                    padding: 3em 2em;
-                }
-                p{
-                    width: 100%;
-                }
-            }
+        }
+        // 
         .contacto_index{
             width: 90%;
             flex-direction: column;
             gap: 4em;
         }
+        // 
         .aporte_index{
             button{
                 transform: translateX(350px);
@@ -151,6 +150,10 @@
         }
     }
 }
+
+// 
+// 
+
 @media screen and (max-width: 576px){
     body{
         .inicio{
@@ -170,12 +173,23 @@
                 }
             }
         }
+        // 
         .index_section{
             padding: 0;
+            .genero{
+                transform: translate(100px);
+            }
+            article{
+                width: 95%;
+            }
         }
+        // 
         .videoteca_index{
             width: 100% ;
             padding: 1em;
+            .genero{
+                transform: translate(100px);
+            }
             article{
                 padding: 1em;
                 p{
@@ -187,41 +201,18 @@
                }
             }
         }
-        
-        .index_ley_danza{
-            padding: 1em;
-            article{
-                padding: 1em;
-                p{
-                    width: 100%;
-                }
-            }
-        }
-        .index_laura{
-            padding: 0;
-            article{
-                p{
-                    width: 100%;
-                }
-                h5{
-                    width: 50%;
-                }
-                .iframe{
-                    height: 185px;
-                    margin: 0 auto;   
-                }
-            }
-        }
-       
+        // 
         .contacto_index{
             width: 100%;
         }
+        // 
         .aporte_index{
             width: 100%;
             p{
                 width: 80%;
             }
         }
+        // 
         footer{
             height: 100px;
             padding: 0;
@@ -314,17 +305,34 @@
     }
     body{
         .index_section{
+            .genero{
+                transform: translate(100px);
+            }
             article{
+                width: 100%;
+                .foto_lucas{
+                    margin-bottom: 1em;
+                }
                 h2{
                     font-size: 2em;
                 }
             }
+        }
+        .videoteca_index{
+            .genero{
+                transform: translate(100px);
+            }
+
         }
         .aporte_index{
             button{
                 transform: translateX(150px);
             }
         }
+        // .tarjetas_articles{
+        //     .page_articles{
+        //     }
+        // }
         
     }
 }

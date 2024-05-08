@@ -23,6 +23,8 @@ $shadow_title: 2px 1px 10px opacify($color: #0f0f0fd7, $amount: 0);
 // estilos para titulos de cada page
 
 @mixin titles (){
+    width: 90%;
+    text-wrap: balance;
     font-size: $size_title;
     line-height: 1em;
     text-shadow: $shadow_title;

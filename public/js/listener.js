@@ -64,7 +64,6 @@ btn_switch.addEventListener('click', ()=>{
             firma.src= "../img/lightmode/firma_light.png"
             x.src= "../img/lightmode/X-light.png"
             hamburguer.src= "../img/lightmode/hamburguer_light.png"
-            console.log('Estás en la página video');
         }
         else{
             localStorage.setItem('lightmode', 'false');
@@ -74,7 +73,7 @@ btn_switch.addEventListener('click', ()=>{
             hamburguer.src= "../img/icons/hamburguer.png"
         }
     }
-    else if(isOnPage('/pages/articles_pages/2.html') || isOnPage('/pages/articles_pages/1.html') ||isOnPage('/pages/articles_pages/3.html') ||isOnPage('/pages/articles_pages/el_mito.html') ||isOnPage('/pages/articles_pages/4.html') ||isOnPage('/pages/articles_pages/6.html') ||isOnPage('/pages/articles_pages/5.html') ){
+    else if(isOnPage('/pages/articles_pages/2.html') || isOnPage('/pages/articles_pages/1.html') ||isOnPage('/pages/articles_pages/3.html') ||isOnPage('/pages/articles_pages/4.html') ||isOnPage('/pages/articles_pages/6.html') ||isOnPage('/pages/articles_pages/5.html') ||isOnPage('/pages/articles_pages/7.html') ||isOnPage('/pages/articles_pages/8.html') ||isOnPage('/pages/articles_pages/9.html') ){
         if(body.classList.contains('light')){
             localStorage.setItem('lightmode', 'true');
             logo.src = "../../img/lightmode/logo-light.png"
@@ -139,7 +138,7 @@ if(localStorage.getItem('lightmode') === 'true'){
             hamburguer.src= "../img/icons/hamburguer.png"
         }
     }
-    else if(isOnPage('/pages/articles_pages/2.html') || isOnPage('/pages/articles_pages/1.html') || isOnPage('/pages/articles_pages/4.html') || isOnPage('/pages/articles_pages/3.html') || isOnPage('/pages/articles_pages/5.html') || isOnPage('/pages/articles_pages/6.html')){
+    else if(isOnPage('/pages/articles_pages/2.html') || isOnPage('/pages/articles_pages/1.html') || isOnPage('/pages/articles_pages/4.html') || isOnPage('/pages/articles_pages/3.html') || isOnPage('/pages/articles_pages/5.html') || isOnPage('/pages/articles_pages/7.html') || isOnPage('/pages/articles_pages/8.html') || isOnPage('/pages/articles_pages/6.html') || isOnPage('/pages/articles_pages/9.html')){
         if(body.classList.contains('light')){
             localStorage.setItem('lightmode', 'true');
 
